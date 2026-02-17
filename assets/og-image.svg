@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Musa Ceesay portfolio preview">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff2df"/>
+      <stop offset="100%" stop-color="#d6f1ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="74" y="70" width="1052" height="490" rx="28" fill="#fffefb" stroke="#e7dccf" stroke-width="4"/>
+  <text x="130" y="220" font-family="Arial, sans-serif" font-size="62" font-weight="700" fill="#1f1a17">Musa Ceesay</text>
+  <text x="130" y="285" font-family="Arial, sans-serif" font-size="34" fill="#5c544e">Information Systems Professional</text>
+  <text x="130" y="360" font-family="Arial, sans-serif" font-size="28" fill="#5c544e">Cybersecurity | IT Support | Client Solutions</text>
+  <rect x="130" y="410" width="380" height="72" rx="12" fill="#d84a2f"/>
+  <text x="320" y="456" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">Portfolio</text>
+</svg>
