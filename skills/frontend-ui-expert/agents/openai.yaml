@@ -1,4 +1,0 @@
-interface:
-  display_name: "Frontend UI Expert"
-  short_description: "Design and build high-quality frontend interfaces"
-  default_prompt: "Use $frontend-ui-expert to design and implement a polished, responsive UI for this project."

@@ -1,9 +1,9 @@
----
-name: frontend-ui-expert
+﻿---
+name: ui-agent
 description: Expert frontend and UI implementation for websites and web apps, including layout, typography, color systems, responsiveness, accessibility, interaction design, and component-level code quality. Use when requests involve designing or refining user interfaces, improving visual polish, building or refactoring HTML/CSS/JS/React UI, creating reusable components, enforcing design consistency, or shipping production-ready responsive experiences.
 ---
 
-# Frontend UI Expert
+# UI-agent
 
 ## Overview
 
@@ -62,3 +62,4 @@ Report:
 Keep explanations concise and implementation-focused.
 Prioritize working code over abstract design theory.
 State concrete tradeoffs when choosing speed vs polish, novelty vs consistency, or aesthetics vs performance.
+

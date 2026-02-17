@@ -87,6 +87,13 @@ a:hover {
   background: var(--accent-soft);
 }
 
+.brand:focus-visible,
+.top-links a:focus-visible,
+.btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
 .hero {
   margin-top: 22px;
   display: grid;
@@ -198,6 +205,7 @@ h4 {
   margin-top: 24px;
   border-top: 1px solid #d8e2f0;
   padding-top: 26px;
+  scroll-margin-top: 96px;
 }
 
 .panel {

@@ -1,4 +1,4 @@
-# Musa Ceesay Portfolio Website
+﻿# Musa Ceesay Portfolio Website
 
 Personal portfolio website for Musa Ceesay, showcasing experience, projects, education, certifications, skills, and contact information.
 
@@ -33,7 +33,7 @@ This site presents:
 |   `-- og-image.svg
 |-- images/
 `-- skills/
-    `-- frontend-ui-expert/
+    `-- ui-agent/
 ```
 
 ## Run Locally
@@ -62,3 +62,5 @@ Then visit `http://localhost:8000`.
 - Email: `musaceesayofficial@gmail.com`
 - LinkedIn: `https://www.linkedin.com/in/musa-ceesay-65a6b0238`
 - GitHub: `https://github.com/MusaCeesay-1`
+
+
