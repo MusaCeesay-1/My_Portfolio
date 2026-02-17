@@ -238,6 +238,101 @@ h1 {
   border-top: 1px solid #dbe4f2;
 }
 
+.about-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 18px;
+  align-items: stretch;
+}
+
+.about-intro {
+  position: relative;
+  overflow: hidden;
+  border-color: #c8d9ee;
+  background:
+    linear-gradient(130deg, rgba(232, 241, 250, 0.8) 0%, rgba(255, 255, 255, 0.95) 44%),
+    var(--surface-solid);
+}
+
+.about-intro::after {
+  content: "";
+  position: absolute;
+  top: -38px;
+  right: -38px;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, rgba(15, 76, 129, 0.16) 0%, rgba(15, 76, 129, 0) 72%);
+  pointer-events: none;
+}
+
+.about-kicker {
+  margin: 0 0 10px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-strong);
+}
+
+.about-lead {
+  margin: 0 0 12px;
+  max-width: 40ch;
+  font-size: 1.2rem;
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+.about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.about-tags span {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid #bdd1e8;
+  background: #f1f7ff;
+  color: #1f456c;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.about-pillars {
+  display: grid;
+  gap: 10px;
+}
+
+.about-pillar {
+  padding: 14px 15px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  background: #ffffff;
+  box-shadow: 0 10px 24px rgba(18, 31, 53, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.about-pillar:hover {
+  transform: translateY(-2px);
+  border-color: #c2d2e7;
+  box-shadow: 0 14px 30px rgba(18, 31, 53, 0.12);
+}
+
+.about-pillar h3 {
+  margin: 0 0 6px;
+  font-family: "Sora", "Segoe UI", sans-serif;
+  font-size: 1rem;
+}
+
+.about-pillar p {
+  margin: 0;
+  color: var(--muted);
+}
+
 h2 {
   margin: 0 0 15px;
   font-family: "Sora", "Segoe UI", sans-serif;
@@ -450,6 +545,14 @@ h2 {
 @media (max-width: 1024px) {
   .grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .about-lead {
+    max-width: 100%;
   }
 }
 
