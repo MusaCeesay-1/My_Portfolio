@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Incident Response Priority Calculator | Musa Ceesay</title>
+    <meta
+      name="description"
+      content="Standalone project page for Musa Ceesay's Incident Response Priority Calculator, including screenshots, architecture highlights, and an interactive SOC triage demo."
+    />
+    <link rel="stylesheet" href="incident-response-priority-calculator.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="topbar">
+        <a class="brand" href="../index.html">Musa Ceesay</a>
+        <nav class="top-links" aria-label="Project navigation">
+          <a href="../index.html#projects">Back To Portfolio</a>
+          <a href="#screenshots">Screenshots</a>
+          <a href="#demo">Live Demo</a>
+          <a href="https://github.com/MusaCeesay-1/incident-response-priority-calculator" target="_blank" rel="noreferrer">GitHub Repo</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <article class="hero-card hero-copy">
+          <span class="badge">Security Operations Project</span>
+          <h1>Incident Response Priority Calculator</h1>
+          <p>
+            A SOC triage simulator that translates incident indicators into an objective risk score, priority band,
+            response SLA, and escalation queue.
+          </p>
+          <p>
+            The goal is consistency under pressure: analysts can make clear decisions faster while keeping investigation notes structured.
+          </p>
+          <div class="hero-cta">
+            <a class="btn primary" href="#demo">Try Live Demo</a>
+            <a class="btn" href="#screenshots">View Screenshots</a>
+          </div>
+        </article>
+        <article class="hero-card hero-visual">
+          <img src="../assets/projects/incident-response-cover.svg" alt="Visual preview of the incident response calculator dashboard" />
+        </article>
+      </section>
+
+      <section id="screenshots" class="section">
+        <h2>Project Screenshots</h2>
+        <p class="section-intro">
+          Product-style screenshots showing the input workflow, critical incident output, and medium-severity analyst handoff.
+        </p>
+        <div class="gallery">
+          <figure class="shot">
+            <img src="../assets/projects/ir-screenshot-01.svg" alt="Screenshot of incident triage inputs and configuration fields" />
+            <p>Input workflow for alert classification and context capture.</p>
+          </figure>
+          <figure class="shot">
+            <img src="../assets/projects/ir-screenshot-02.svg" alt="Screenshot of critical incident result with SLA and escalation output" />
+            <p>Critical outcome with response SLA and SOC escalation queue.</p>
+          </figure>
+          <figure class="shot">
+            <img src="../assets/projects/ir-screenshot-03.svg" alt="Screenshot of medium-severity incident result and ticket handoff section" />
+            <p>Medium path with recommended actions and ticket-ready summary.</p>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section project-grid">
+        <article class="panel">
+          <h2>Case Study</h2>
+          <p><strong>Problem:</strong> Alert queues can become inconsistent when analysts prioritize based on intuition alone.</p>
+          <p><strong>Approach:</strong> I designed a weighted triage model that combines threat type, business impact, data sensitivity, scope, confidence, and control gaps.</p>
+          <p><strong>Result:</strong> The workflow outputs repeatable priority decisions, targeted response actions, and a ticket-style handoff format.</p>
+        </article>
+        <article class="panel">
+          <h2>Stack</h2>
+          <ul class="list">
+            <li>Semantic HTML</li>
+            <li>Custom CSS (responsive)</li>
+            <li>Vanilla JavaScript decision logic</li>
+            <li>Accessible form + live region updates</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="demo" class="section">
+        <h2>Live Demo</h2>
+        <article class="panel">
+          <p class="tool-lead">Use a preset, tune a few values, and generate a triage outcome.</p>
+          <div class="tool-controls" role="group" aria-label="Scenario presets">
+            <button class="btn preset-btn" type="button" data-preset="ransomware">Load Ransomware Scenario</button>
+            <button class="btn preset-btn" type="button" data-preset="phishing">Load Phishing Scenario</button>
+            <button class="btn preset-btn" type="button" data-preset="credential">Load Credential Theft Scenario</button>
+          </div>
+          <form id="ir-form" class="tool-form">
+            <label for="threatType">Threat Type</label>
+            <select id="threatType" name="threatType" required>
+              <option value="5">Ransomware / Active Malware</option>
+              <option value="4">Account Compromise</option>
+              <option value="3">Suspicious Login Pattern</option>
+              <option value="2">Phishing Email</option>
+              <option value="1">Informational Alert</option>
+            </select>
+
+            <label for="assetCriticality">Asset Criticality</label>
+            <select id="assetCriticality" name="assetCriticality" required>
+              <option value="5">Mission-Critical System</option>
+              <option value="4">Revenue-Impacting Application</option>
+              <option value="3">Core Internal Service</option>
+              <option value="2">Departmental Tool</option>
+              <option value="1">Low-Impact Asset</option>
+            </select>
+
+            <label for="dataSensitivity">Data Sensitivity</label>
+            <select id="dataSensitivity" name="dataSensitivity" required>
+              <option value="5">Regulated / PII Data</option>
+              <option value="4">Confidential Business Data</option>
+              <option value="3">Internal Data</option>
+              <option value="2">Limited Internal Data</option>
+              <option value="1">Public Data</option>
+            </select>
+
+            <label for="scopeSize">Affected Scope</label>
+            <select id="scopeSize" name="scopeSize" required>
+              <option value="5">Organization-Wide</option>
+              <option value="4">Multiple Teams</option>
+              <option value="3">Single Team</option>
+              <option value="2">Few Users</option>
+              <option value="1">Single User / Endpoint</option>
+            </select>
+
+            <label for="detectability">Detection Confidence</label>
+            <select id="detectability" name="detectability" required>
+              <option value="5">Strong Evidence / Confirmed</option>
+              <option value="4">High Confidence</option>
+              <option value="3">Moderate Confidence</option>
+              <option value="2">Low Confidence</option>
+              <option value="1">Uncertain Signal</option>
+            </select>
+
+            <label for="controlGap">Security Control Gap</label>
+            <select id="controlGap" name="controlGap" required>
+              <option value="5">Critical controls missing</option>
+              <option value="4">Major controls weakened</option>
+              <option value="3">Partial control coverage</option>
+              <option value="2">Minor hardening gap</option>
+              <option value="1">Controls effective</option>
+            </select>
+
+            <label for="incidentSummary">Incident Summary</label>
+            <input
+              id="incidentSummary"
+              name="incidentSummary"
+              type="text"
+              maxlength="120"
+              placeholder="Ex: Multiple failed admin logins followed by unusual data transfer."
+              required
+            />
+
+            <div class="tool-actions">
+              <button class="btn primary" type="submit">Calculate Priority</button>
+              <button class="btn" type="reset">Reset</button>
+            </div>
+          </form>
+
+          <div id="ir-result" class="tool-result" aria-live="polite">
+            <p class="muted">Select incident factors and calculate the recommended response priority.</p>
+          </div>
+        </article>
+      </section>
+
+      <footer class="footer">
+        <p>Built by Musa Ceesay. <a href="../index.html#contact">Contact for walkthrough or collaboration.</a></p>
+      </footer>
+    </main>
+
+    <script>
+      const irForm = document.getElementById("ir-form");
+      const irResult = document.getElementById("ir-result");
+      const presetButtons = document.querySelectorAll(".preset-btn");
+
+      const triageWeights = {
+        threatType: 0.24,
+        assetCriticality: 0.2,
+        dataSensitivity: 0.18,
+        scopeSize: 0.16,
+        detectability: 0.1,
+        controlGap: 0.12
+      };
+
+      const scenarioPresets = {
+        ransomware: {
+          threatType: "5",
+          assetCriticality: "5",
+          dataSensitivity: "4",
+          scopeSize: "4",
+          detectability: "5",
+          controlGap: "4",
+          incidentSummary: "Ransom note detected on finance file server and endpoint encryption activity observed."
+        },
+        phishing: {
+          threatType: "2",
+          assetCriticality: "2",
+          dataSensitivity: "2",
+          scopeSize: "2",
+          detectability: "3",
+          controlGap: "2",
+          incidentSummary: "Employee reported a suspicious email link click with no confirmed malware execution."
+        },
+        credential: {
+          threatType: "4",
+          assetCriticality: "4",
+          dataSensitivity: "4",
+          scopeSize: "3",
+          detectability: "4",
+          controlGap: "3",
+          incidentSummary: "Privileged account login from unusual geolocation followed by abnormal admin actions."
+        }
+      };
+
+      function priorityFromScore(score) {
+        if (score >= 80) {
+          return {
+            label: "Critical",
+            badgeClass: "priority-critical",
+            sla: "Immediate (0-15 min)",
+            queue: "Incident Commander + SOC Tier 3",
+            response: [
+              "Isolate impacted systems and disable compromised accounts.",
+              "Open incident bridge and notify security leadership.",
+              "Preserve forensic artifacts and launch containment plan."
+            ]
+          };
+        }
+        if (score >= 60) {
+          return {
+            label: "High",
+            badgeClass: "priority-high",
+            sla: "Urgent (within 1 hour)",
+            queue: "SOC Tier 2 Escalation",
+            response: [
+              "Triage logs across SIEM, endpoint, and identity provider.",
+              "Apply scoped containment and monitor for lateral movement.",
+              "Document timeline and prepare management update."
+            ]
+          };
+        }
+        if (score >= 40) {
+          return {
+            label: "Medium",
+            badgeClass: "priority-medium",
+            sla: "Standard (within 4 hours)",
+            queue: "SOC Tier 1 Investigation",
+            response: [
+              "Correlate alert context with recent user and asset behavior.",
+              "Collect additional evidence before full escalation.",
+              "Track in case queue and validate false-positive risk."
+            ]
+          };
+        }
+        return {
+          label: "Low",
+          badgeClass: "priority-low",
+          sla: "Routine (same business day)",
+          queue: "SOC Queue Monitoring",
+          response: [
+            "Add context and maintain event watchlist coverage.",
+            "Review tuning opportunities for detection quality.",
+            "Close with notes if no malicious behavior is found."
+          ]
+        };
+      }
+
+      function escapeHtml(value) {
+        return value
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;")
+          .replaceAll("'", "&#39;");
+      }
+
+      function renderInitialResult() {
+        irResult.innerHTML = `<p class="muted">Select incident factors and calculate the recommended response priority.</p>`;
+      }
+
+      function applyScenarioPreset(name) {
+        const preset = scenarioPresets[name];
+        if (!preset) return;
+        Object.entries(preset).forEach(([key, value]) => {
+          if (irForm.elements[key]) {
+            irForm.elements[key].value = value;
+          }
+        });
+      }
+
+      presetButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          applyScenarioPreset(button.dataset.preset);
+        });
+      });
+
+      irForm.addEventListener("reset", () => {
+        window.setTimeout(renderInitialResult, 0);
+      });
+
+      irForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(irForm);
+        const incidentSummary = String(formData.get("incidentSummary") || "").trim();
+        if (!incidentSummary) {
+          irResult.innerHTML = `<p class="muted">Add an incident summary before calculating priority.</p>`;
+          return;
+        }
+
+        const factors = {
+          threatType: Number(formData.get("threatType")),
+          assetCriticality: Number(formData.get("assetCriticality")),
+          dataSensitivity: Number(formData.get("dataSensitivity")),
+          scopeSize: Number(formData.get("scopeSize")),
+          detectability: Number(formData.get("detectability")),
+          controlGap: Number(formData.get("controlGap"))
+        };
+
+        const weightedScore = Object.entries(triageWeights).reduce((total, [key, weight]) => {
+          return total + (factors[key] * weight);
+        }, 0);
+
+        const normalizedScore = Math.round((weightedScore / 5) * 100);
+        const priority = priorityFromScore(normalizedScore);
+        const ticketId = `IR-${new Date().getFullYear()}-${String(Math.floor(Math.random() * 9000) + 1000)}`;
+
+        irResult.innerHTML = `
+          <h3>Triage Outcome</h3>
+          <div class="tool-grid">
+            <p class="metric"><strong>Priority</strong><span class="priority-pill ${priority.badgeClass}">${priority.label}</span></p>
+            <p class="metric"><strong>Risk Score</strong><span>${normalizedScore}/100</span></p>
+            <p class="metric"><strong>Response SLA</strong><span>${priority.sla}</span></p>
+            <p class="metric"><strong>Escalation Queue</strong><span>${priority.queue}</span></p>
+          </div>
+          <p><strong>Incident Summary:</strong> ${escapeHtml(incidentSummary)}</p>
+          <p><strong>Recommended Actions:</strong></p>
+          <ul class="recommendations">
+            ${priority.response.map((step) => `<li>${step}</li>`).join("")}
+          </ul>
+          <p class="ticket-block">Ticket ${ticketId} | Status: Open | Owner: ${priority.queue}</p>
+        `;
+      });
+    </script>
+  </body>
+</html>

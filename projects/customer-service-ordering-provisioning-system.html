@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Customer Service Ordering & Provisioning System | Musa Ceesay</title>
+    <meta
+      name="description"
+      content="Systems analysis case study for a digital customer service ordering and provisioning system, including goals, KPIs, process design, requirements, and data model."
+    />
+    <link rel="stylesheet" href="customer-service-ordering-provisioning-system.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="topbar">
+        <a class="brand" href="../index.html">Musa Ceesay</a>
+        <nav class="top-links" aria-label="Project navigation">
+          <a href="../index.html#projects">Back To Portfolio</a>
+          <a href="#deliverables">Deliverables</a>
+          <a href="#process">Process Diagrams</a>
+          <a href="#data-model">Data Model</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <article class="hero-card hero-copy">
+          <span class="badge">Systems Analysis Case</span>
+          <h1>Digital Customer Service Ordering & Provisioning System</h1>
+          <p>
+            A portfolio case that models how a home internet provider can reduce activation delays,
+            eliminate manual re-entry, and improve visibility across Sales, Provisioning, Billing, and Support.
+          </p>
+          <div class="hero-meta">
+            <p><strong>Domain:</strong> Telecom / ISP Operations</p>
+            <p><strong>Role:</strong> Business Systems Analyst</p>
+            <p><strong>Status:</strong> Analysis Package Complete</p>
+          </div>
+          <div class="hero-cta">
+            <a class="btn primary" href="#deliverables">View Deliverables</a>
+            <a class="btn" href="customer-service-ordering-provisioning-brief.pdf" download>Download 1-Page PDF Brief</a>
+          </div>
+        </article>
+        <article class="hero-card hero-panel">
+          <h2>Project Outcome</h2>
+          <ul class="checklist">
+            <li>Problem statement</li>
+            <li>Stakeholder map</li>
+            <li>Business goals and KPIs</li>
+            <li>AS-IS and TO-BE process diagrams</li>
+            <li>Requirements, user stories, acceptance criteria</li>
+            <li>System context and ER model</li>
+            <li>Assumptions, risks, and scope boundaries</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="deliverables" class="section">
+        <h2>Problem, Goals, and Metrics</h2>
+        <article class="panel">
+          <h3>Problem Statement</h3>
+          <p>
+            Customers ordering home internet service experience delays, manual re-entry of data, and status confusion between
+            sales, provisioning, and billing systems. The organization needs an integrated ordering and provisioning system
+            that reduces activation time and improves order visibility.
+          </p>
+        </article>
+
+        <div class="two-col">
+          <article class="panel">
+            <h3>Business Goals</h3>
+            <ol class="list">
+              <li>Reduce order activation time from 3 days to 1 day.</li>
+              <li>Eliminate duplicate data entry across systems.</li>
+              <li>Provide real-time order status visibility.</li>
+              <li>Reduce provisioning errors by 40%.</li>
+              <li>Improve customer satisfaction score (CSAT).</li>
+            </ol>
+          </article>
+          <article class="panel">
+            <h3>Success Metrics (KPIs)</h3>
+            <ul class="list">
+              <li>Average activation time</li>
+              <li>Order error rate</li>
+              <li>Percent of orders auto-provisioned</li>
+              <li>Support tickets per order</li>
+              <li>Customer satisfaction score</li>
+            </ul>
+          </article>
+        </div>
+
+        <article class="panel">
+          <h3>Stakeholder Map</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Stakeholder</th>
+                  <th>Role</th>
+                  <th>Primary Concern</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Sales Rep</td><td>Submits customer orders</td><td>Speed and simple order intake</td></tr>
+                <tr><td>Customer</td><td>Requests internet service</td><td>Activation clarity and timeline transparency</td></tr>
+                <tr><td>Provisioning Team</td><td>Activates line and service profile</td><td>Accurate order payload and fewer corrections</td></tr>
+                <tr><td>Billing</td><td>Starts billing cycle</td><td>Correct plan, pricing, and start date</td></tr>
+                <tr><td>Support</td><td>Handles issues and escalations</td><td>End-to-end order visibility</td></tr>
+                <tr><td>IT / Engineering</td><td>Maintains integrated systems</td><td>Stable integrations and observability</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+
+      <section id="process" class="section">
+        <h2>AS-IS and TO-BE Process Diagrams</h2>
+        <p class="lead">Draw.io source files and exported SVG diagrams are included for recruiter review and artifact traceability.</p>
+
+        <div class="diagram-grid">
+          <figure class="diagram-figure panel">
+            <figcaption><strong>AS-IS Process (Current State)</strong></figcaption>
+            <img class="diagram-image" src="../assets/projects/diagrams/as-is-process-export.svg" alt="AS-IS process diagram for manual ordering and provisioning workflow" />
+            <p class="resource-links">
+              <a href="../assets/projects/diagrams/as-is-process-export.svg" target="_blank" rel="noreferrer">Open SVG Export</a>
+              <a href="../assets/projects/diagrams/as-is-process.drawio" target="_blank" rel="noreferrer">Open .drawio Source</a>
+            </p>
+          </figure>
+
+          <figure class="diagram-figure panel">
+            <figcaption><strong>TO-BE Process (Future State)</strong></figcaption>
+            <img class="diagram-image" src="../assets/projects/diagrams/to-be-process-export.svg" alt="TO-BE process diagram for integrated order orchestration and activation" />
+            <p class="resource-links">
+              <a href="../assets/projects/diagrams/to-be-process-export.svg" target="_blank" rel="noreferrer">Open SVG Export</a>
+              <a href="../assets/projects/diagrams/to-be-process.drawio" target="_blank" rel="noreferrer">Open .drawio Source</a>
+            </p>
+          </figure>
+        </div>
+      </section>
+
+      <section id="requirements" class="section">
+        <h2>Requirements, Stories, and Acceptance Criteria</h2>
+
+        <article class="panel">
+          <h3>Functional Requirements</h3>
+          <ul class="list">
+            <li>The system must validate mandatory order fields before submission.</li>
+            <li>The system must integrate CRM, provisioning, and billing with a shared order ID.</li>
+            <li>The system must provide real-time order status updates to internal users and customers.</li>
+            <li>The system must support automated activation for eligible orders.</li>
+            <li>The system must create an exception case when provisioning fails.</li>
+          </ul>
+        </article>
+
+        <article class="panel">
+          <h3>Non-Functional Requirements</h3>
+          <ul class="list">
+            <li>99.9% monthly platform availability target.</li>
+            <li>Status updates visible within 60 seconds of process events.</li>
+            <li>Role-based access controls for sales, support, provisioning, and billing users.</li>
+            <li>Audit logging for all order status changes and manual overrides.</li>
+          </ul>
+        </article>
+
+        <article class="panel">
+          <h3>User Stories + Acceptance Criteria</h3>
+          <div class="story-grid">
+            <section class="story">
+              <h4>US-01: Sales Order Entry</h4>
+              <p><strong>Story:</strong> As a sales rep, I want one form with guided validation so I can submit complete orders without rework.</p>
+              <p><strong>Acceptance:</strong> Given a required field is missing, when I submit the order, then the system blocks submission and shows the missing field list.</p>
+            </section>
+            <section class="story">
+              <h4>US-02: Customer Order Tracking</h4>
+              <p><strong>Story:</strong> As a customer, I want to see real-time order status so I know when service will be activated.</p>
+              <p><strong>Acceptance:</strong> Given the order state changes, when activation progresses, then the customer portal updates status within 60 seconds.</p>
+            </section>
+            <section class="story">
+              <h4>US-03: Provisioning Automation</h4>
+              <p><strong>Story:</strong> As provisioning staff, I want eligible orders auto-activated so manual workload decreases.</p>
+              <p><strong>Acceptance:</strong> Given all technical checks pass, when order processing starts, then activation completes without manual intervention.</p>
+            </section>
+          </div>
+        </article>
+      </section>
+
+      <section class="section">
+        <h2>System Context Diagram</h2>
+        <article class="panel">
+          <img class="diagram-image" src="../assets/projects/diagrams/system-context-export.svg" alt="System context diagram showing ordering platform integrations" />
+          <p class="resource-links">
+            <a href="../assets/projects/diagrams/system-context-export.svg" target="_blank" rel="noreferrer">Open SVG Export</a>
+            <a href="../assets/projects/diagrams/system-context.drawio" target="_blank" rel="noreferrer">Open .drawio Source</a>
+          </p>
+        </article>
+      </section>
+
+      <section id="data-model" class="section">
+        <h2>ER Data Model (Conceptual)</h2>
+        <article class="panel">
+          <p class="lead">Core entities and relationships for order lifecycle tracking.</p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Entity</th><th>Key Fields</th><th>Relationships</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Customer</td><td>customer_id, name, contact, address</td><td>1-to-many with Order</td></tr>
+                <tr><td>Order</td><td>order_id, customer_id, plan_id, status, submitted_at</td><td>Many-to-1 Customer, 1-to-many Status History</td></tr>
+                <tr><td>Plan</td><td>plan_id, name, speed_tier, monthly_price</td><td>1-to-many with Order</td></tr>
+                <tr><td>Provisioning Job</td><td>job_id, order_id, activation_result, activated_at</td><td>1-to-1 or 1-to-many with Order (retries)</td></tr>
+                <tr><td>Billing Account</td><td>billing_id, customer_id, plan_id, start_date</td><td>Many-to-1 Customer, linked to activated Order</td></tr>
+                <tr><td>Status History</td><td>status_event_id, order_id, status, event_time, actor</td><td>Many-to-1 with Order</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+
+      <section class="section">
+        <h2>Assumptions, Risks, and Scope</h2>
+        <div class="two-col">
+          <article class="panel">
+            <h3>Assumptions</h3>
+            <ul class="list compact">
+              <li>Existing CRM and billing systems expose secure APIs.</li>
+              <li>Product catalog and eligibility rules are centrally maintained.</li>
+              <li>Support teams will adopt standardized status definitions.</li>
+            </ul>
+
+            <h3>Risks</h3>
+            <ul class="list compact">
+              <li>Legacy integration latency may delay real-time sync.</li>
+              <li>Incomplete historical data may affect migration quality.</li>
+              <li>Operational resistance can reduce adoption if training is weak.</li>
+            </ul>
+          </article>
+          <article class="panel">
+            <h3>Scope Boundaries</h3>
+            <p><strong>In Scope:</strong> Residential internet orders, activation workflow, status tracking, billing trigger integration, support exception queue.</p>
+            <p><strong>Out Of Scope:</strong> Hardware warehouse logistics, field technician dispatch optimization, enterprise contracts, collections processes.</p>
+            <p class="resource-links"><a href="customer-service-ordering-provisioning-brief.pdf" download>Download One-Page PDF Brief</a></p>
+          </article>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>Built by Musa Ceesay. <a href="../index.html#contact">Contact for walkthrough or analyst collaboration.</a></p>
+      </footer>
+    </main>
+  </body>
+</html>

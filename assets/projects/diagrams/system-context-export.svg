@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">System Context Diagram</title>
+  <desc id="desc">Ordering and Provisioning platform interactions with customer-facing and internal systems.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#165b97"/>
+    </marker>
+    <style>
+      .bg { fill: #f8faff; }
+      .core { fill: #eaf2ff; stroke: #8eb0d8; stroke-width: 2; rx: 18; }
+      .ext { fill: #ffffff; stroke: #b8cbe3; stroke-width: 2; rx: 14; }
+      .txt { font-family: Manrope, Arial, sans-serif; fill: #17233a; font-size: 22px; }
+      .small { font-size: 18px; fill: #4f6282; }
+      .ttl { font-family: Sora, Arial, sans-serif; font-size: 34px; fill: #103f6d; font-weight: 700; }
+      .line { stroke: #165b97; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1400" height="900"/>
+  <text class="ttl" x="56" y="64">System Context: Digital Ordering and Provisioning Platform</text>
+
+  <rect class="core" x="470" y="300" width="460" height="250"/>
+  <text class="txt" x="548" y="395">Ordering &amp; Provisioning Platform</text>
+  <text class="small" x="565" y="430">Order orchestration and status engine</text>
+
+  <rect class="ext" x="110" y="120" width="260" height="110"/>
+  <text class="txt" x="185" y="165">Customer</text>
+  <text class="small" x="138" y="194">Order and status view</text>
+
+  <rect class="ext" x="520" y="110" width="220" height="110"/>
+  <text class="txt" x="600" y="155">CRM</text>
+  <text class="small" x="551" y="184">Order capture</text>
+
+  <rect class="ext" x="880" y="110" width="300" height="110"/>
+  <text class="txt" x="940" y="155">Provisioning Engine</text>
+  <text class="small" x="928" y="184">Activation execution</text>
+
+  <rect class="ext" x="1080" y="360" width="240" height="110"/>
+  <text class="txt" x="1162" y="405">Billing</text>
+  <text class="small" x="1110" y="434">Plan + charge start</text>
+
+  <rect class="ext" x="860" y="660" width="300" height="110"/>
+  <text class="txt" x="964" y="705">Support Console</text>
+  <text class="small" x="933" y="734">Exception handling</text>
+
+  <rect class="ext" x="240" y="660" width="300" height="110"/>
+  <text class="txt" x="311" y="705">Notification Service</text>
+  <text class="small" x="316" y="734">Email and SMS updates</text>
+
+  <rect class="ext" x="80" y="390" width="260" height="110"/>
+  <text class="txt" x="120" y="435">Operations Dashboard</text>
+  <text class="small" x="125" y="464">KPIs and monitoring</text>
+
+  <line class="line" x1="370" y1="175" x2="470" y2="330"/>
+  <line class="line" x1="630" y1="220" x2="650" y2="300"/>
+  <line class="line" x1="980" y1="220" x2="840" y2="300"/>
+  <line class="line" x1="1080" y1="415" x2="930" y2="425"/>
+  <line class="line" x1="860" y1="700" x2="790" y2="550"/>
+  <line class="line" x1="540" y1="700" x2="610" y2="550"/>
+  <line class="line" x1="340" y1="445" x2="470" y2="425"/>
+</svg>

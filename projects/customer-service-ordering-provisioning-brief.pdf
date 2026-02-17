@@ -1,0 +1,120 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 2034 >>
+stream
+BT
+/F1 14 Tf
+50 800 Td
+(Digital Customer Service Ordering & Provisioning System) Tj
+0 -24 Td
+/F1 11 Tf
+(One-Page Analyst Brief | Musa Ceesay) Tj
+0 -16 Td
+() Tj
+0 -16 Td
+(Problem:) Tj
+0 -16 Td
+(Customers face delays and status confusion due to manual re-entry across sales, provisioning, and billing.) Tj
+0 -16 Td
+() Tj
+0 -16 Td
+(Business Goals:) Tj
+0 -16 Td
+(- Reduce activation time from 3 days to 1 day) Tj
+0 -16 Td
+(- Eliminate duplicate data entry) Tj
+0 -16 Td
+(- Provide real-time order status) Tj
+0 -16 Td
+(- Reduce provisioning errors by 40%) Tj
+0 -16 Td
+(- Improve customer satisfaction score) Tj
+0 -16 Td
+() Tj
+0 -16 Td
+(KPIs:) Tj
+0 -16 Td
+(- Average activation time) Tj
+0 -16 Td
+(- Order error rate) Tj
+0 -16 Td
+(- % orders auto-provisioned) Tj
+0 -16 Td
+(- Support tickets per order) Tj
+0 -16 Td
+(- CSAT) Tj
+0 -16 Td
+() Tj
+0 -16 Td
+(AS-IS Highlights:) Tj
+0 -16 Td
+(- CRM entry followed by manual provisioning portal re-entry) Tj
+0 -16 Td
+(- Validation via email loops and batch activation queue) Tj
+0 -16 Td
+(- Delayed billing confirmation and high support call volume) Tj
+0 -16 Td
+() Tj
+0 -16 Td
+(TO-BE Highlights:) Tj
+0 -16 Td
+(- Unified intake with validation and shared order ID) Tj
+0 -16 Td
+(- Event-driven orchestration with automated provisioning checks) Tj
+0 -16 Td
+(- Billing sync from activation event and live status timeline) Tj
+0 -16 Td
+() Tj
+0 -16 Td
+(Core Requirements:) Tj
+0 -16 Td
+(- Real-time status updates \(<60s\)) Tj
+0 -16 Td
+(- Auto-provisioning for eligible orders) Tj
+0 -16 Td
+(- Exception queue with diagnostics and audit trail) Tj
+0 -16 Td
+(- Role-based access and 99.9% availability target) Tj
+0 -16 Td
+() Tj
+0 -16 Td
+(Scope:) Tj
+0 -16 Td
+(In scope: residential internet orders, activation workflow, billing trigger integration.) Tj
+0 -16 Td
+(Out of scope: warehouse logistics, field-dispatch optimization, enterprise contracts.) Tj
+0 -16 Td
+() Tj
+0 -16 Td
+(Value:) Tj
+0 -16 Td
+(This design targets faster activation, lower rework, and clearer customer communication across teams.) Tj
+0 -16 Td
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2397
+%%EOF

@@ -1,0 +1,32 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="24" fill="#EAF2FB"/>
+  <rect x="36" y="32" width="1128" height="696" rx="20" fill="#FFFFFF" stroke="#CFE0F4" stroke-width="2"/>
+  <rect x="68" y="72" width="460" height="22" rx="8" fill="#1D3F67"/>
+  <rect x="68" y="108" width="760" height="14" rx="7" fill="#95B4D8"/>
+  <rect x="68" y="146" width="170" height="34" rx="10" fill="#0E4C82"/>
+  <rect x="248" y="146" width="170" height="34" rx="10" fill="#ECF3FC"/>
+  <rect x="428" y="146" width="210" height="34" rx="10" fill="#ECF3FC"/>
+  <rect x="68" y="212" width="220" height="16" rx="8" fill="#355D8E"/>
+  <rect x="68" y="236" width="490" height="44" rx="10" fill="#F7FAFF" stroke="#D6E4F5"/>
+  <rect x="68" y="296" width="220" height="16" rx="8" fill="#355D8E"/>
+  <rect x="68" y="320" width="490" height="44" rx="10" fill="#F7FAFF" stroke="#D6E4F5"/>
+  <rect x="68" y="380" width="220" height="16" rx="8" fill="#355D8E"/>
+  <rect x="68" y="404" width="490" height="44" rx="10" fill="#F7FAFF" stroke="#D6E4F5"/>
+  <rect x="68" y="464" width="220" height="16" rx="8" fill="#355D8E"/>
+  <rect x="68" y="488" width="490" height="44" rx="10" fill="#F7FAFF" stroke="#D6E4F5"/>
+  <rect x="68" y="548" width="220" height="16" rx="8" fill="#355D8E"/>
+  <rect x="68" y="572" width="490" height="44" rx="10" fill="#F7FAFF" stroke="#D6E4F5"/>
+  <rect x="68" y="640" width="190" height="44" rx="12" fill="#0E4C82"/>
+  <rect x="270" y="640" width="120" height="44" rx="12" fill="#F3F8FF" stroke="#D6E4F5"/>
+  <rect x="608" y="212" width="520" height="472" rx="14" fill="#F8FBFF" stroke="#D6E4F5"/>
+  <rect x="636" y="244" width="190" height="18" rx="8" fill="#355D8E"/>
+  <rect x="636" y="282" width="220" height="84" rx="12" fill="#FFFFFF" stroke="#D6E4F5"/>
+  <rect x="874" y="282" width="220" height="84" rx="12" fill="#FFFFFF" stroke="#D6E4F5"/>
+  <rect x="636" y="380" width="220" height="84" rx="12" fill="#FFFFFF" stroke="#D6E4F5"/>
+  <rect x="874" y="380" width="220" height="84" rx="12" fill="#FFFFFF" stroke="#D6E4F5"/>
+  <rect x="636" y="486" width="458" height="16" rx="8" fill="#AAC4E2"/>
+  <rect x="636" y="516" width="458" height="16" rx="8" fill="#AAC4E2"/>
+  <rect x="636" y="546" width="420" height="16" rx="8" fill="#AAC4E2"/>
+  <rect x="636" y="584" width="458" height="84" rx="12" fill="#EFF6FF" stroke="#D6E4F5" stroke-dasharray="6 6"/>
+  <text x="68" y="708" fill="#506888" font-family="Arial, sans-serif" font-size="18">Screenshot 1: Analyst inputs and triage configuration</text>
+</svg>

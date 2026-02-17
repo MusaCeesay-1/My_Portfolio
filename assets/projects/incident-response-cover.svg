@@ -1,0 +1,32 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" rx="28" fill="#0A1A2F"/>
+  <rect x="40" y="40" width="1120" height="640" rx="22" fill="#0F2747"/>
+  <circle cx="108" cy="88" r="10" fill="#FD5F57"/>
+  <circle cx="142" cy="88" r="10" fill="#FDBC41"/>
+  <circle cx="176" cy="88" r="10" fill="#34C84A"/>
+  <rect x="80" y="130" width="440" height="38" rx="10" fill="#1B3E69"/>
+  <rect x="80" y="186" width="300" height="16" rx="8" fill="#274F81"/>
+  <rect x="80" y="215" width="510" height="16" rx="8" fill="#274F81"/>
+  <rect x="80" y="255" width="250" height="52" rx="12" fill="#0B88D8"/>
+  <rect x="350" y="255" width="250" height="52" rx="12" fill="#1E3E66"/>
+  <rect x="650" y="130" width="470" height="250" rx="16" fill="#132F52"/>
+  <rect x="676" y="162" width="220" height="20" rx="8" fill="#2B5E94"/>
+  <rect x="676" y="196" width="418" height="16" rx="8" fill="#204A78"/>
+  <rect x="676" y="224" width="390" height="16" rx="8" fill="#204A78"/>
+  <rect x="676" y="252" width="350" height="16" rx="8" fill="#204A78"/>
+  <rect x="676" y="292" width="170" height="56" rx="12" fill="#E5484D"/>
+  <rect x="860" y="292" width="170" height="56" rx="12" fill="#F59E0B"/>
+  <rect x="80" y="340" width="1040" height="290" rx="16" fill="#132F52"/>
+  <rect x="110" y="376" width="186" height="96" rx="12" fill="#1B3E69"/>
+  <rect x="320" y="376" width="186" height="96" rx="12" fill="#1B3E69"/>
+  <rect x="530" y="376" width="186" height="96" rx="12" fill="#1B3E69"/>
+  <rect x="740" y="376" width="186" height="96" rx="12" fill="#1B3E69"/>
+  <rect x="950" y="376" width="140" height="96" rx="12" fill="#254B79"/>
+  <rect x="110" y="500" width="760" height="18" rx="9" fill="#1E446F"/>
+  <rect x="110" y="532" width="910" height="18" rx="9" fill="#1E446F"/>
+  <rect x="110" y="564" width="840" height="18" rx="9" fill="#1E446F"/>
+  <rect x="962" y="500" width="128" height="82" rx="12" fill="#123259"/>
+  <text x="80" y="108" fill="#9FCBFF" font-family="Arial, sans-serif" font-size="28" font-weight="700">
+    Incident Response Priority Calculator
+  </text>
+</svg>
