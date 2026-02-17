@@ -182,6 +182,24 @@ h4 {
   border-color: #b9cbdf;
 }
 
+.download-full-case-btn:hover {
+  background: #e9f3ff;
+  border-color: #9fc0e4;
+  box-shadow: 0 8px 18px rgba(15, 76, 129, 0.18);
+}
+
+.download-full-case-btn:active {
+  background: #dbeafb;
+  border-color: #8fb3da;
+  transform: translateY(1px);
+}
+
+.download-full-case-btn:visited {
+  background: #f1edff;
+  border-color: #c7bbea;
+  color: #4c3f73;
+}
+
 .btn.primary {
   border-color: transparent;
   background: linear-gradient(135deg, var(--accent) 0%, #165b97 100%);

@@ -201,5 +201,15 @@
         <p>Built by Musa Ceesay. <a href="../index.html#contact">Contact for walkthrough or analyst collaboration.</a></p>
       </footer>
     </main>
+    <script>
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+      window.addEventListener("load", () => {
+        if (!window.location.hash) {
+          window.scrollTo(0, 0);
+        }
+      });
+    </script>
   </body>
 </html>

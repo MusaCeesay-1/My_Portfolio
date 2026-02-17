@@ -403,6 +403,15 @@
     <button class="back-to-top" type="button" aria-label="Back to top">Top</button>
 
     <script>
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+      window.addEventListener("load", () => {
+        if (!window.location.hash) {
+          window.scrollTo(0, 0);
+        }
+      });
+
       document.getElementById("year").textContent = new Date().getFullYear();
 
       const menuToggle = document.querySelector(".menu-toggle");
