@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" modified="2026-02-17T22:25:00.000Z" agent="Codex" version="24.7.17" type="device">
+  <diagram id="erDataModel01" name="ER Data Model">
+    <mxGraphModel dx="1320" dy="760" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="Customer&#xa;----------------------&#xa;customer_id (PK)&#xa;name&#xa;contact" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="80" y="120" width="240" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Order&#xa;----------------------&#xa;order_id (PK)&#xa;customer_id (FK)&#xa;plan_id&#xa;status&#xa;submitted_at" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="420" y="120" width="260" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Plan&#xa;----------------------&#xa;plan_id (PK)&#xa;name&#xa;speed&#xa;price" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="780" y="120" width="230" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="ProvisioningJob&#xa;----------------------&#xa;job_id (PK)&#xa;order_id (FK)&#xa;result&#xa;activated_at" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="420" y="390" width="280" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="BillingAccount&#xa;----------------------&#xa;billing_id (PK)&#xa;customer_id (FK)&#xa;start_date" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="80" y="390" width="260" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="StatusHistory&#xa;----------------------&#xa;status_event_id (PK)&#xa;order_id (FK)&#xa;status&#xa;event_time" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="780" y="390" width="260" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="1 to many" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="1 to many" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="4" target="3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="1 to many" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="3" target="5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="23" value="1 to many" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="2" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="24" value="1 to many" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="3" target="7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
