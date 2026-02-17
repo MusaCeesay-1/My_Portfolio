@@ -28,7 +28,18 @@
     <header id="home" class="container">
       <nav class="nav">
         <a class="logo" href="#home">Musa Ceesay</a>
-        <div class="links">
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-menu"
+          aria-label="Toggle navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="links" id="site-menu">
           <a href="#home">Home</a>
           <a href="#view-experience">Experience</a>
           <a href="#projects">Projects</a>
@@ -46,7 +57,7 @@
         <div class="hero-layout">
           <div class="hero-copy">
             <p class="badge">Information Systems Professional</p>
-            <h1>Hi, I'm Musa.</h1>
+            <h1>Hi, I'm Musa Ceesay.</h1>
             <p class="subtitle">
               IT Account Manager and Information Systems Professional with experience delivering technical solutions, driving revenue growth, and improving customer outcomes.
             </p>
@@ -161,7 +172,7 @@
           <article class="card">
             <h3>
               <a class="edu-school" href="https://drexel.edu/" target="_blank" rel="noreferrer">
-                <img class="edu-logo" src="assets/education/drexel-logo.svg" alt="Drexel University logo" />
+                <img class="edu-logo" src="images/Drexel University Logo.png" alt="Drexel University logo" />
                 <span>Drexel University</span>
               </a>
             </h3>
@@ -171,7 +182,7 @@
           <article class="card">
             <h3>
               <a class="edu-school" href="https://www.utg.edu.gm/" target="_blank" rel="noreferrer">
-                <img class="edu-logo" src="assets/education/utg-logo.svg" alt="University of The Gambia logo" />
+                <img class="edu-logo" src="images/UTG Logo.png" alt="University of The Gambia logo" />
                 <span>University of The Gambia</span>
               </a>
             </h3>
@@ -277,12 +288,58 @@
       </section>
 
       <footer class="footer">
-        <p>© <span id="year"></span> Musa. All rights reserved.</p>
+        <p>© <span id="year"></span> Musa Ceesay. All rights reserved.</p>
       </footer>
     </main>
 
+    <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
+
+      const menuToggle = document.querySelector(".menu-toggle");
+      const siteMenu = document.getElementById("site-menu");
+      const mobileQuery = window.matchMedia("(max-width: 860px)");
+      const backToTopBtn = document.querySelector(".back-to-top");
+
+      function closeMenu() {
+        siteMenu.classList.remove("is-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+      }
+
+      menuToggle.addEventListener("click", () => {
+        const isOpen = siteMenu.classList.toggle("is-open");
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      siteMenu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          if (mobileQuery.matches) {
+            closeMenu();
+          }
+        });
+      });
+
+      window.addEventListener("resize", () => {
+        if (!mobileQuery.matches) {
+          closeMenu();
+        }
+      });
+
+      function toggleBackToTop() {
+        if (window.scrollY > 280) {
+          backToTopBtn.classList.add("is-visible");
+        } else {
+          backToTopBtn.classList.remove("is-visible");
+        }
+      }
+
+      backToTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+
+      window.addEventListener("scroll", toggleBackToTop);
+      toggleBackToTop();
     </script>
   </body>
 </html>
