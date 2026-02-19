@@ -1,0 +1,249 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operational Performance KPI Analysis | Musa Ceesay</title>
+    <meta
+      name="description"
+      content="Operational Performance KPI Analysis case study with KPI dashboard design, Postgres SQL pack, and executive insight memo."
+    />
+    <link rel="stylesheet" href="customer-service-ordering-provisioning-system.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="topbar">
+        <a class="brand" href="../index.html">Musa Ceesay</a>
+        <nav class="top-links" aria-label="Project navigation">
+          <a href="../index.html#projects">Back To Portfolio</a>
+          <a href="#kpi-framework">KPI Framework</a>
+          <a href="#dashboard">Dashboard</a>
+          <a href="#memo">Insight Memo</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <article class="hero-card hero-copy">
+          <span class="badge">Systems Analysis Scenario</span>
+          <h1>Operational Performance KPI Analysis</h1>
+          <p><strong>Service Activation and Support Efficiency</strong></p>
+          <p>
+            Scenario: "A digital service provider wants to reduce activation delays and support load. Leadership
+            needs KPI visibility and decision guidance based on operational data."
+          </p>
+          <div class="hero-meta">
+            <p><strong>Role:</strong> Business Systems Analyst</p>
+            <p><strong>Stack:</strong> PostgreSQL + Dashboard Design Framework</p>
+            <p><strong>Status:</strong> Completed (Analyst Portfolio Scenario)</p>
+          </div>
+          <div class="hero-cta">
+            <a class="btn primary" href="operational-kpi-dataset.sql" download>Download Dataset SQL</a>
+            <a class="btn" href="operational-kpi-analysis-pack.sql" download>Download SQL Pack</a>
+          </div>
+        </article>
+        <article class="hero-card hero-panel">
+          <h2>For Hiring Managers</h2>
+          <ul class="checklist">
+            <li>KPI definition sheet with formulas and decision purpose</li>
+            <li>Data cleaning plan and standardized operational schema</li>
+            <li>Postgres SQL pack for KPI and risk analysis</li>
+            <li>Executive memo translating signals into actions</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section">
+        <h2>Dataset Specification</h2>
+        <article class="panel">
+          <p>
+            The synthetic dataset is generated in PostgreSQL and uses one table: <code>support_tickets</code>.
+            Field consistency across this page, the dataset script, and the SQL pack:
+          </p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Field</th><th>Type</th><th>Description</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>ticket_id</td><td>INT</td><td>Primary ticket identifier</td></tr>
+                <tr><td>customer_id</td><td>INT</td><td>Customer key</td></tr>
+                <tr><td>created_at</td><td>TIMESTAMP</td><td>Ticket creation time</td></tr>
+                <tr><td>first_response_at</td><td>TIMESTAMP</td><td>First agent response time</td></tr>
+                <tr><td>resolved_at</td><td>TIMESTAMP</td><td>Resolution time (NULL if unresolved)</td></tr>
+                <tr><td>status</td><td>TEXT</td><td>Open, In Progress, Closed</td></tr>
+                <tr><td>priority</td><td>TEXT</td><td>Low, Medium, High, Urgent</td></tr>
+                <tr><td>category</td><td>TEXT</td><td>Provisioning, Billing, Technical, Account, Other</td></tr>
+                <tr><td>channel</td><td>TEXT</td><td>Email, Chat, Phone, Web</td></tr>
+                <tr><td>assigned_agent</td><td>TEXT</td><td>Assigned support agent</td></tr>
+                <tr><td>reopened_flag</td><td>INT</td><td>0 or 1</td></tr>
+                <tr><td>repeat_ticket_flag</td><td>INT</td><td>0 or 1</td></tr>
+                <tr><td>sla_hours</td><td>INT</td><td>SLA threshold by priority</td></tr>
+                <tr><td>sla_breach_flag</td><td>INT</td><td>0 or 1</td></tr>
+                <tr><td>csat</td><td>NUMERIC(3,1)</td><td>Customer satisfaction score (1.0 to 5.0)</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+
+      <section id="kpi-framework" class="section">
+        <h2>KPI Definition Table</h2>
+        <article class="panel table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>KPI</th>
+                <th>Formula</th>
+                <th>Decision Use</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Average Resolution Time</td>
+                <td>AVG(resolved_at - created_at)</td>
+                <td>Baseline speed and staffing calibration</td>
+              </tr>
+              <tr>
+                <td>Median Resolution Time</td>
+                <td>PERCENTILE_CONT(0.5) within resolved durations</td>
+                <td>Outlier-resistant service speed signal</td>
+              </tr>
+              <tr>
+                <td>SLA Breach %</td>
+                <td>100 * SUM(sla_breach_flag) / COUNT(*)</td>
+                <td>Reliability and risk monitoring</td>
+              </tr>
+              <tr>
+                <td>Backlog Size</td>
+                <td>COUNT(*) WHERE status &lt;&gt; 'Closed'</td>
+                <td>Queue congestion and execution pressure</td>
+              </tr>
+              <tr>
+                <td>Reopen %</td>
+                <td>100 * SUM(reopened_flag) / COUNT(*)</td>
+                <td>First-time fix quality indicator</td>
+              </tr>
+              <tr>
+                <td>Repeat Ticket %</td>
+                <td>100 * SUM(repeat_ticket_flag) / COUNT(*)</td>
+                <td>Root-cause and knowledge-gap detection</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+
+
+      <section class="section">
+        <h2>How These Numbers Are Computed</h2>
+        <article class="panel">
+          <p>
+            KPI values are generated from <code>support_tickets</code> using SQL in
+            <code>operational-kpi-analysis-pack.sql</code>. Use these snippets to calculate dashboard-ready outputs.
+          </p>
+          <pre><code>-- 1) Average resolution time (hours)
+SELECT ROUND(AVG(EXTRACT(EPOCH FROM (resolved_at - created_at)) / 3600.0), 2) AS avg_resolution_hours
+FROM support_tickets
+WHERE resolved_at IS NOT NULL;
+
+-- 2) Median resolution time (hours)
+SELECT ROUND(
+  PERCENTILE_CONT(0.5) WITHIN GROUP (
+    ORDER BY EXTRACT(EPOCH FROM (resolved_at - created_at)) / 3600.0
+  ),
+  2
+) AS median_resolution_hours
+FROM support_tickets
+WHERE resolved_at IS NOT NULL;
+
+-- 3) SLA breach percentage
+SELECT ROUND(100.0 * AVG(sla_breach_flag), 2) AS sla_breach_pct
+FROM support_tickets;
+
+-- 4) Backlog size (open and in progress)
+SELECT COUNT(*) AS backlog_size
+FROM support_tickets
+WHERE status &lt;&gt; 'Closed';
+
+-- 5) Reopen and repeat ticket percentages
+SELECT
+  ROUND(100.0 * AVG(reopened_flag), 2) AS reopen_rate_pct,
+  ROUND(100.0 * AVG(repeat_ticket_flag), 2) AS repeat_ticket_rate_pct
+FROM support_tickets;</code></pre>
+        </article>
+      </section>
+
+      <section id="dashboard" class="section">
+        <h2>Dashboard Layout</h2>
+        <div class="two-col">
+          <article class="panel">
+            <h3>Top Strip</h3>
+            <ul class="list compact">
+              <li>Scorecards: avg resolution, median resolution, SLA breach %, backlog, reopen %, repeat %</li>
+              <li>Trend chart: weekly ticket volume</li>
+              <li>Category bar: average resolution by category</li>
+            </ul>
+          </article>
+          <article class="panel">
+            <h3>Risk and Drilldown</h3>
+            <ul class="list compact">
+              <li>Breach heatmap: SLA breach % by category and priority</li>
+              <li>Backlog aging: open tickets older than 72 hours</li>
+              <li>Drill table: category metrics for speed, quality, and customer impact</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="memo" class="section">
+        <h2>Executive Insight Memo</h2>
+        <article class="panel">
+          <p><strong>Date:</strong> February 18, 2026</p>
+          <p><strong>To:</strong> Operations Leadership</p>
+          <p><strong>From:</strong> Business Systems Analyst</p>
+          <p><strong>Subject:</strong> Service Activation and Support Efficiency KPI Review</p>
+
+          <p>
+            KPI evidence shows service risk is concentrated in higher-priority work. Breach rates are materially higher
+            in High and Urgent queues, and backlog aging indicates unresolved items exceeding 72 hours. Resolution speed
+            is uneven by category, with Provisioning and Technical queues driving most delay pressure.
+          </p>
+          <p>
+            Quality indicators reinforce the same risk profile: categories with longer resolution duration show elevated
+            reopen and repeat rates, and CSAT is lower when SLA breaches occur. This pattern suggests that throughput and
+            first-time fix quality need to be improved together rather than as separate initiatives.
+          </p>
+          <p><strong>Recommended actions:</strong></p>
+          <ol class="list">
+            <li>Set daily ownership for aged backlog triage and enforce 72-hour exception review.</li>
+            <li>Apply targeted coaching and playbooks in high-breach category-priority combinations.</li>
+            <li>Rebalance staffing and escalation coverage for peak weekly load windows.</li>
+            <li>Track weekly KPI deltas in leadership reviews using the defined dashboard layout.</li>
+          </ol>
+        </article>
+      </section>
+
+      <section class="section">
+        <h2>Downloads</h2>
+        <article class="panel">
+          <p><a href="operational-kpi-dataset.sql" download>Download operational-kpi-dataset.sql</a></p>
+          <p><a href="operational-kpi-analysis-pack.sql" download>Download operational-kpi-analysis-pack.sql</a></p>
+        </article>
+      </section>
+
+      <footer class="footer">
+        <p>Built by Musa Ceesay. <a href="../index.html#contact">Contact for walkthrough or analyst collaboration.</a></p>
+      </footer>
+    </main>
+    <script>
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+      window.addEventListener("load", () => {
+        if (!window.location.hash) {
+          window.scrollTo(0, 0);
+        }
+      });
+    </script>
+  </body>
+</html>
