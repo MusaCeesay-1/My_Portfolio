@@ -1,0 +1,216 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="980" viewBox="0 0 1600 980">
+<rect width="1600" height="980" fill="#f7fafc"/>
+<text x="34" y="42" font-family="Segoe UI, Arial" font-size="30" font-weight="700" fill="#0b2a4a">Operational Performance KPI Dashboard</text>
+<text x="34" y="70" font-family="Segoe UI, Arial" font-size="16" fill="#3a5876">Service Activation and Support Efficiency</text>
+<rect x="30" y="95" width="210" height="98" rx="10" fill="#ffffff" stroke="#d7e1ea"/>
+<text x="44" y="129" font-family="Segoe UI, Arial" font-size="14" fill="#567">Avg Resolution (hrs)</text>
+<text x="44" y="167" font-family="Segoe UI, Arial" font-size="32" font-weight="700" fill="#123">36.05</text>
+<rect x="252" y="95" width="210" height="98" rx="10" fill="#ffffff" stroke="#d7e1ea"/>
+<text x="266" y="129" font-family="Segoe UI, Arial" font-size="14" fill="#567">Median Resolution (hrs)</text>
+<text x="266" y="167" font-family="Segoe UI, Arial" font-size="32" font-weight="700" fill="#123">24.18</text>
+<rect x="474" y="95" width="210" height="98" rx="10" fill="#ffffff" stroke="#d7e1ea"/>
+<text x="488" y="129" font-family="Segoe UI, Arial" font-size="14" fill="#567">SLA Breach %</text>
+<text x="488" y="167" font-family="Segoe UI, Arial" font-size="32" font-weight="700" fill="#123">18.00%</text>
+<rect x="696" y="95" width="210" height="98" rx="10" fill="#ffffff" stroke="#d7e1ea"/>
+<text x="710" y="129" font-family="Segoe UI, Arial" font-size="14" fill="#567">Backlog Size</text>
+<text x="710" y="167" font-family="Segoe UI, Arial" font-size="32" font-weight="700" fill="#123">14</text>
+<rect x="918" y="95" width="210" height="98" rx="10" fill="#ffffff" stroke="#d7e1ea"/>
+<text x="932" y="129" font-family="Segoe UI, Arial" font-size="14" fill="#567">Reopen %</text>
+<text x="932" y="167" font-family="Segoe UI, Arial" font-size="32" font-weight="700" fill="#123">10.25%</text>
+<rect x="1140" y="95" width="210" height="98" rx="10" fill="#ffffff" stroke="#d7e1ea"/>
+<text x="1154" y="129" font-family="Segoe UI, Arial" font-size="14" fill="#567">Repeat Ticket %</text>
+<text x="1154" y="167" font-family="Segoe UI, Arial" font-size="32" font-weight="700" fill="#123">14.12%</text>
+<rect x="1362" y="95" width="210" height="98" rx="10" fill="#ffffff" stroke="#d7e1ea"/>
+<text x="1376" y="129" font-family="Segoe UI, Arial" font-size="14" fill="#567">Avg CSAT</text>
+<text x="1376" y="167" font-family="Segoe UI, Arial" font-size="32" font-weight="700" fill="#123">4.22</text>
+<rect x="30" y="220" width="760" height="300" rx="10" fill="#ffffff" stroke="#d7e1ea"/>
+<text x="46" y="248" font-family="Segoe UI, Arial" font-size="16" font-weight="600" fill="#123">Weekly Ticket Volume</text>
+<line x1="80" y1="480" x2="760" y2="480" stroke="#9db0c3"/>
+<line x1="80" y1="270" x2="80" y2="480" stroke="#9db0c3"/>
+<polyline points="80.0,387.7 114.0,321.0 148.0,341.5 182.0,331.3 216.0,331.3 250.0,346.7 284.0,315.9 318.0,372.3 352.0,336.4 386.0,295.4 420.0,310.8 454.0,280.0 488.0,362.1 522.0,315.9 556.0,290.3 590.0,336.4 624.0,397.9 658.0,336.4 692.0,346.7 726.0,326.2 760.0,480.0" fill="none" stroke="#1570ef" stroke-width="3"/>
+<circle cx="80.0" cy="387.7" r="3" fill="#1570ef"/>
+<text x="72.0" y="498" font-family="Segoe UI, Arial" font-size="10" fill="#6b7d90">W1</text>
+<circle cx="182.0" cy="331.3" r="3" fill="#1570ef"/>
+<text x="174.0" y="498" font-family="Segoe UI, Arial" font-size="10" fill="#6b7d90">W4</text>
+<circle cx="284.0" cy="315.9" r="3" fill="#1570ef"/>
+<text x="276.0" y="498" font-family="Segoe UI, Arial" font-size="10" fill="#6b7d90">W7</text>
+<circle cx="386.0" cy="295.4" r="3" fill="#1570ef"/>
+<text x="378.0" y="498" font-family="Segoe UI, Arial" font-size="10" fill="#6b7d90">W10</text>
+<circle cx="488.0" cy="362.1" r="3" fill="#1570ef"/>
+<text x="480.0" y="498" font-family="Segoe UI, Arial" font-size="10" fill="#6b7d90">W13</text>
+<circle cx="590.0" cy="336.4" r="3" fill="#1570ef"/>
+<text x="582.0" y="498" font-family="Segoe UI, Arial" font-size="10" fill="#6b7d90">W16</text>
+<circle cx="692.0" cy="346.7" r="3" fill="#1570ef"/>
+<text x="684.0" y="498" font-family="Segoe UI, Arial" font-size="10" fill="#6b7d90">W19</text>
+<circle cx="760.0" cy="480.0" r="3" fill="#1570ef"/>
+<text x="752.0" y="498" font-family="Segoe UI, Arial" font-size="10" fill="#6b7d90">W21</text>
+<rect x="810" y="220" width="360" height="300" rx="10" fill="#ffffff" stroke="#d7e1ea"/>
+<text x="826" y="248" font-family="Segoe UI, Arial" font-size="16" font-weight="600" fill="#123">Avg Resolution by Category</text>
+<text x="826" y="290.0" font-family="Segoe UI, Arial" font-size="12" fill="#4b5f73">Technical</text>
+<rect x="936" y="278.0" width="198.0" height="12" rx="3" fill="#2f80ed"/>
+<text x="1140.0" y="289.0" font-family="Segoe UI, Arial" font-size="11" fill="#4b5f73">38.7</text>
+<text x="826" y="336.0" font-family="Segoe UI, Arial" font-size="12" fill="#4b5f73">Provisioning</text>
+<rect x="936" y="324.0" width="197.7" height="12" rx="3" fill="#2f80ed"/>
+<text x="1139.7" y="335.0" font-family="Segoe UI, Arial" font-size="11" fill="#4b5f73">38.7</text>
+<text x="826" y="382.0" font-family="Segoe UI, Arial" font-size="12" fill="#4b5f73">Account</text>
+<rect x="936" y="370.0" width="162.6" height="12" rx="3" fill="#2f80ed"/>
+<text x="1104.6" y="381.0" font-family="Segoe UI, Arial" font-size="11" fill="#4b5f73">31.8</text>
+<text x="826" y="428.0" font-family="Segoe UI, Arial" font-size="12" fill="#4b5f73">Billing</text>
+<rect x="936" y="416.0" width="160.0" height="12" rx="3" fill="#2f80ed"/>
+<text x="1102.0" y="427.0" font-family="Segoe UI, Arial" font-size="11" fill="#4b5f73">31.3</text>
+<text x="826" y="474.0" font-family="Segoe UI, Arial" font-size="12" fill="#4b5f73">Other</text>
+<rect x="936" y="462.0" width="93.2" height="12" rx="3" fill="#2f80ed"/>
+<text x="1035.2" y="473.0" font-family="Segoe UI, Arial" font-size="11" fill="#4b5f73">18.2</text>
+<rect x="1190" y="220" width="380" height="300" rx="10" fill="#ffffff" stroke="#d7e1ea"/>
+<text x="1206" y="248" font-family="Segoe UI, Arial" font-size="16" font-weight="600" fill="#123">SLA Breach % Heatmap</text>
+<text x="1309.6" y="286" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#4b5f73">Low</text>
+<text x="1380.0" y="286" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#4b5f73">Medium</text>
+<text x="1450.4" y="286" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#4b5f73">High</text>
+<text x="1520.8" y="286" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#4b5f73">Urgent</text>
+<text x="1208" y="335.5" font-family="Segoe UI, Arial" font-size="11" fill="#4b5f73">Account</text>
+<rect x="1276.4" y="314.3" width="66.4" height="34.3" fill="rgb(45,170,70)" rx="3"/>
+<text x="1309.6" y="335.5" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#fff">0.0%</text>
+<rect x="1346.8" y="314.3" width="66.4" height="34.3" fill="rgb(80,147,70)" rx="3"/>
+<text x="1380.0" y="335.5" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#fff">18.5%</text>
+<rect x="1417.2" y="314.3" width="66.4" height="34.3" fill="rgb(66,156,70)" rx="3"/>
+<text x="1450.4" y="335.5" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#fff">11.1%</text>
+<rect x="1487.6" y="314.3" width="66.4" height="34.3" fill="rgb(235,50,70)" rx="3"/>
+<text x="1520.8" y="335.5" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#fff">100.0%</text>
+<text x="1208" y="373.8" font-family="Segoe UI, Arial" font-size="11" fill="#4b5f73">Billing</text>
+<rect x="1276.4" y="352.7" width="66.4" height="34.3" fill="rgb(55,163,70)" rx="3"/>
+<text x="1309.6" y="373.8" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#fff">5.3%</text>
+<rect x="1346.8" y="352.7" width="66.4" height="34.3" fill="rgb(64,157,70)" rx="3"/>
+<text x="1380.0" y="373.8" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#fff">10.2%</text>
+<rect x="1417.2" y="352.7" width="66.4" height="34.3" fill="rgb(89,141,70)" rx="3"/>
+<text x="1450.4" y="373.8" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#fff">23.4%</text>
+<rect x="1487.6" y="352.7" width="66.4" height="34.3" fill="rgb(125,119,70)" rx="3"/>
+<text x="1520.8" y="373.8" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#fff">42.1%</text>
+<text x="1208" y="412.2" font-family="Segoe UI, Arial" font-size="11" fill="#4b5f73">Other</text>
+<rect x="1276.4" y="391.0" width="66.4" height="34.3" fill="rgb(45,170,70)" rx="3"/>
+<text x="1309.6" y="412.2" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#fff">0.0%</text>
+<rect x="1346.8" y="391.0" width="66.4" height="34.3" fill="rgb(45,170,70)" rx="3"/>
+<text x="1380.0" y="412.2" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#fff">0.0%</text>
+<rect x="1417.2" y="391.0" width="66.4" height="34.3" fill="rgb(45,170,70)" rx="3"/>
+<text x="1450.4" y="412.2" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#fff">0.0%</text>
+<rect x="1487.6" y="391.0" width="66.4" height="34.3" fill="rgb(45,170,70)" rx="3"/>
+<text x="1520.8" y="412.2" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#fff">0.0%</text>
+<text x="1208" y="450.5" font-family="Segoe UI, Arial" font-size="11" fill="#4b5f73">Provisioning</text>
+<rect x="1276.4" y="429.3" width="66.4" height="34.3" fill="rgb(67,155,70)" rx="3"/>
+<text x="1309.6" y="450.5" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#fff">11.8%</text>
+<rect x="1346.8" y="429.3" width="66.4" height="34.3" fill="rgb(72,152,70)" rx="3"/>
+<text x="1380.0" y="450.5" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#fff">14.6%</text>
+<rect x="1417.2" y="429.3" width="66.4" height="34.3" fill="rgb(100,135,70)" rx="3"/>
+<text x="1450.4" y="450.5" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#fff">29.2%</text>
+<rect x="1487.6" y="429.3" width="66.4" height="34.3" fill="rgb(84,145,70)" rx="3"/>
+<text x="1520.8" y="450.5" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#fff">20.8%</text>
+<text x="1208" y="488.8" font-family="Segoe UI, Arial" font-size="11" fill="#4b5f73">Technical</text>
+<rect x="1276.4" y="467.7" width="66.4" height="34.3" fill="rgb(68,155,70)" rx="3"/>
+<text x="1309.6" y="488.8" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#fff">12.2%</text>
+<rect x="1346.8" y="467.7" width="66.4" height="34.3" fill="rgb(80,147,70)" rx="3"/>
+<text x="1380.0" y="488.8" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#fff">18.5%</text>
+<rect x="1417.2" y="467.7" width="66.4" height="34.3" fill="rgb(100,134,70)" rx="3"/>
+<text x="1450.4" y="488.8" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#fff">29.2%</text>
+<rect x="1487.6" y="467.7" width="66.4" height="34.3" fill="rgb(96,137,70)" rx="3"/>
+<text x="1520.8" y="488.8" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#fff">27.3%</text>
+<rect x="30" y="540" width="900" height="410" rx="10" fill="#ffffff" stroke="#d7e1ea"/>
+<text x="46" y="568" font-family="Segoe UI, Arial" font-size="16" font-weight="600" fill="#123">Backlog Aging (Open > 72 Hours)</text>
+<text x="46" y="595" font-family="Segoe UI, Arial" font-size="12" font-weight="600" fill="#4b5f73">Ticket</text>
+<text x="130" y="595" font-family="Segoe UI, Arial" font-size="12" font-weight="600" fill="#4b5f73">Category</text>
+<text x="280" y="595" font-family="Segoe UI, Arial" font-size="12" font-weight="600" fill="#4b5f73">Priority</text>
+<text x="380" y="595" font-family="Segoe UI, Arial" font-size="12" font-weight="600" fill="#4b5f73">Status</text>
+<text x="480" y="595" font-family="Segoe UI, Arial" font-size="12" font-weight="600" fill="#4b5f73">Age Hours</text>
+<text x="600" y="595" font-family="Segoe UI, Arial" font-size="12" font-weight="600" fill="#4b5f73">Agent</text>
+<line x1="44" y1="609" x2="916" y2="609" stroke="#edf2f7"/>
+<text x="46" y="623" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">786</text>
+<text x="130" y="623" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">Provisioning</text>
+<text x="280" y="623" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">High</text>
+<text x="380" y="623" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">In Progress</text>
+<text x="480" y="623" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">292.4</text>
+<text x="600" y="623" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">Agent E. Patel</text>
+<line x1="44" y1="641" x2="916" y2="641" stroke="#edf2f7"/>
+<text x="46" y="655" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">601</text>
+<text x="130" y="655" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">Technical</text>
+<text x="280" y="655" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">Urgent</text>
+<text x="380" y="655" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">In Progress</text>
+<text x="480" y="655" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">290.4</text>
+<text x="600" y="655" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">Agent B. Mensah</text>
+<line x1="44" y1="673" x2="916" y2="673" stroke="#edf2f7"/>
+<text x="46" y="687" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">34</text>
+<text x="130" y="687" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">Technical</text>
+<text x="280" y="687" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">Low</text>
+<text x="380" y="687" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">In Progress</text>
+<text x="480" y="687" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">277.0</text>
+<text x="600" y="687" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">Agent B. Mensah</text>
+<line x1="44" y1="705" x2="916" y2="705" stroke="#edf2f7"/>
+<text x="46" y="719" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">731</text>
+<text x="130" y="719" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">Provisioning</text>
+<text x="280" y="719" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">Medium</text>
+<text x="380" y="719" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">In Progress</text>
+<text x="480" y="719" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">252.6</text>
+<text x="600" y="719" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">Agent E. Patel</text>
+<line x1="44" y1="737" x2="916" y2="737" stroke="#edf2f7"/>
+<text x="46" y="751" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">295</text>
+<text x="130" y="751" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">Technical</text>
+<text x="280" y="751" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">Low</text>
+<text x="380" y="751" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">In Progress</text>
+<text x="480" y="751" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">242.2</text>
+<text x="600" y="751" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">Agent G. Kim</text>
+<line x1="44" y1="769" x2="916" y2="769" stroke="#edf2f7"/>
+<text x="46" y="783" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">288</text>
+<text x="130" y="783" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">Technical</text>
+<text x="280" y="783" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">Medium</text>
+<text x="380" y="783" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">In Progress</text>
+<text x="480" y="783" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">187.3</text>
+<text x="600" y="783" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">Agent G. Kim</text>
+<line x1="44" y1="801" x2="916" y2="801" stroke="#edf2f7"/>
+<text x="46" y="815" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">230</text>
+<text x="130" y="815" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">Account</text>
+<text x="280" y="815" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">Urgent</text>
+<text x="380" y="815" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">In Progress</text>
+<text x="480" y="815" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">179.3</text>
+<text x="600" y="815" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">Agent H. Torres</text>
+<line x1="44" y1="833" x2="916" y2="833" stroke="#edf2f7"/>
+<text x="46" y="847" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">429</text>
+<text x="130" y="847" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">Provisioning</text>
+<text x="280" y="847" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">Low</text>
+<text x="380" y="847" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">In Progress</text>
+<text x="480" y="847" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">171.5</text>
+<text x="600" y="847" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">Agent C. Smith</text>
+<rect x="950" y="540" width="620" height="410" rx="10" fill="#ffffff" stroke="#d7e1ea"/>
+<text x="966" y="568" font-family="Segoe UI, Arial" font-size="16" font-weight="600" fill="#123">Agent Snapshot + CSAT Impact</text>
+<text x="966" y="596" font-family="Segoe UI, Arial" font-size="12" font-weight="600" fill="#4b5f73">Agent</text>
+<text x="1200" y="596" font-family="Segoe UI, Arial" font-size="12" font-weight="600" fill="#4b5f73">Tickets</text>
+<text x="1270" y="596" font-family="Segoe UI, Arial" font-size="12" font-weight="600" fill="#4b5f73">SLA%</text>
+<text x="1340" y="596" font-family="Segoe UI, Arial" font-size="12" font-weight="600" fill="#4b5f73">CSAT</text>
+<text x="966" y="624" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">Agent E. Patel</text>
+<text x="1200" y="624" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">107</text>
+<text x="1270" y="624" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">24.3</text>
+<text x="1340" y="624" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">4.10</text>
+<text x="966" y="652" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">Agent I. Brown</text>
+<text x="1200" y="652" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">103</text>
+<text x="1270" y="652" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">28.2</text>
+<text x="1340" y="652" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">3.99</text>
+<text x="966" y="680" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">Agent B. Mensah</text>
+<text x="1200" y="680" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">100</text>
+<text x="1270" y="680" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">18.0</text>
+<text x="1340" y="680" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">4.22</text>
+<text x="966" y="708" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">Agent F. Okafor</text>
+<text x="1200" y="708" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">98</text>
+<text x="1270" y="708" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">15.3</text>
+<text x="1340" y="708" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">4.26</text>
+<text x="966" y="736" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">Agent C. Smith</text>
+<text x="1200" y="736" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">88</text>
+<text x="1270" y="736" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">12.5</text>
+<text x="1340" y="736" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">4.34</text>
+<text x="966" y="764" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">Agent H. Torres</text>
+<text x="1200" y="764" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">81</text>
+<text x="1270" y="764" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">14.8</text>
+<text x="1340" y="764" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">4.19</text>
+<text x="970" y="784" font-family="Segoe UI, Arial" font-size="13" font-weight="600" fill="#4b5f73">Avg CSAT by SLA Breach</text>
+<text x="970" y="814" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">No Breach</text>
+<rect x="1080" y="800" width="237.4" height="18" rx="4" fill="#1f9d55"/>
+<text x="1325.4" y="814" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">4.56</text>
+<text x="970" y="870" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">Breach</text>
+<rect x="1080" y="856" width="137.8" height="18" rx="4" fill="#d64545"/>
+<text x="1225.8" y="870" font-family="Segoe UI, Arial" font-size="12" fill="#263a4d">2.65</text>
+</svg>

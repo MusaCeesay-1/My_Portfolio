@@ -8,12 +8,37 @@
       name="description"
       content="Standalone project page for Musa Ceesay's Incident Response Priority Calculator, including screenshots, architecture highlights, and an interactive SOC triage demo."
     />
+    <script>
+      (() => {
+        try {
+          const storedTheme = localStorage.getItem("portfolio-theme");
+          if (storedTheme === "light" || storedTheme === "dark") {
+            document.documentElement.setAttribute("data-theme", storedTheme);
+            return;
+          }
+          if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            document.documentElement.setAttribute("data-theme", "dark");
+          }
+        } catch (error) {
+          // Ignore storage access issues and fall back to default theme.
+        }
+      })();
+    </script>
     <link rel="stylesheet" href="incident-response-priority-calculator.css" />
   </head>
   <body>
     <main class="page">
       <header class="topbar">
-        <a class="brand" href="../index.html">Musa Ceesay</a>
+        <a class="brand" href="../index.html" aria-label="Go to portfolio home">
+          <img class="brand-avatar" src="../Professional Headshot.png" alt="Musa Ceesay profile photo" />
+          <span class="brand-text">
+            <span class="brand-name">Musa Ceesay</span>
+            <span class="brand-role">Business Systems Analyst</span>
+          </span>
+        </a>
+        <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+          Dark Mode
+        </button>
         <nav class="top-links" aria-label="Project navigation">
           <a href="../index.html#projects">Back To Portfolio</a>
           <a href="#screenshots">Screenshots</a>
@@ -40,6 +65,18 @@
         </article>
         <article class="hero-card hero-visual">
           <img src="../assets/projects/incident-response-cover.svg" alt="Visual preview of the incident response calculator dashboard" />
+        </article>
+      </section>
+
+      <section class="section">
+        <article class="panel">
+          <h2>For Hiring Managers</h2>
+          <ul class="list compact">
+            <li>Structured triage model translating incident factors into repeatable decisions.</li>
+            <li>Documented response workflow with SLA and escalation mapping.</li>
+            <li>Interactive artifact demonstrating risk scoring logic and analyst handoff output.</li>
+            <li>Project screenshots showing UI flow, severity outputs, and reporting format.</li>
+          </ul>
         </article>
       </section>
 
@@ -183,9 +220,29 @@
         }
       });
 
+      const themeToggle = document.querySelector(".theme-toggle");
+      const themeStorageKey = "portfolio-theme";
       const irForm = document.getElementById("ir-form");
       const irResult = document.getElementById("ir-result");
       const presetButtons = document.querySelectorAll(".preset-btn");
+
+      function setTheme(theme) {
+        document.documentElement.setAttribute("data-theme", theme);
+        const isDark = theme === "dark";
+        themeToggle.setAttribute("aria-pressed", String(isDark));
+        themeToggle.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+        themeToggle.textContent = isDark ? "Light Mode" : "Dark Mode";
+      }
+
+      function initializeTheme() {
+        const currentTheme = document.documentElement.getAttribute("data-theme");
+        if (currentTheme === "light" || currentTheme === "dark") {
+          setTheme(currentTheme);
+          return;
+        }
+        const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        setTheme(preferredTheme);
+      }
 
       const triageWeights = {
         threatType: 0.24,
@@ -308,6 +365,16 @@
         });
       });
 
+      themeToggle.addEventListener("click", () => {
+        const nextTheme = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+        setTheme(nextTheme);
+        try {
+          localStorage.setItem(themeStorageKey, nextTheme);
+        } catch (error) {
+          // Ignore storage access issues and keep runtime theme state.
+        }
+      });
+
       irForm.addEventListener("reset", () => {
         window.setTimeout(renderInitialResult, 0);
       });
@@ -355,6 +422,9 @@
           <p class="ticket-block">Ticket ${ticketId} | Status: Open | Owner: ${priority.queue}</p>
         `;
       });
+
+      initializeTheme();
     </script>
   </body>
 </html>
+

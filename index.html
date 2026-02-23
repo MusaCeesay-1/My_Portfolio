@@ -22,33 +22,56 @@
       content="Experience, certifications, and projects across cybersecurity, IT support, and systems-focused client solutions."
     />
     <meta name="twitter:image" content="https://musaceesay-1.github.io/My_Portfolio/assets/og-image.svg" />
+    <script>
+      (() => {
+        try {
+          const storedTheme = localStorage.getItem("portfolio-theme");
+          if (storedTheme === "light" || storedTheme === "dark") {
+            document.documentElement.setAttribute("data-theme", storedTheme);
+            return;
+          }
+          if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            document.documentElement.setAttribute("data-theme", "dark");
+          }
+        } catch (error) {
+          // Ignore storage access issues and fall back to default theme.
+        }
+      })();
+    </script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header id="home" class="container">
       <nav class="nav">
-        <a class="logo" href="#home">Musa Ceesay</a>
-        <button
-          class="menu-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="site-menu"
-          aria-label="Toggle navigation menu"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+        <a class="logo" href="#home" aria-label="Go to home">
+          <img class="logo-avatar" src="Professional Headshot.png" alt="Musa Ceesay profile photo" />
+          <span class="logo-text">
+            <span class="logo-name">Musa Ceesay</span>
+            <span class="logo-role">Business Systems Analyst</span>
+          </span>
+        </a>
         <div class="links" id="site-menu">
           <a href="#home">Home</a>
           <a href="#view-experience">Experience</a>
           <a href="#projects">Projects</a>
-          <a href="#portfolio-overview">Portfolio Overview</a>
-          <a href="#education">Education</a>
-          <a href="#certifications">Certifications</a>
-          <a href="#skills">Skills</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+            Dark Mode
+          </button>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-menu"
+            aria-label="Toggle navigation menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </nav>
     </header>
@@ -60,9 +83,9 @@
             <p class="badge">Business Systems Analyst | Systems & Process Design | Agile Delivery</p>
             <h1>Hi, I'm Musa Ceesay.</h1>
             <p class="subtitle">
-              IT Account Manager and Business Systems Analyst with an MSc in Information Systems, delivering requirements, process design, and systems analysis case studies that connect business goals to technical execution. Known for clear stakeholder communication, structured documentation, and measurable operational impact.
+              Business Systems Analyst with an MSc in Information Systems and hands-on sales and customer service experience. I turn business needs into clear requirements, streamlined workflows, and KPI-driven decisions that improve service performance and customer outcomes.
             </p>
-            <p class="target-roles"><strong>Target roles:</strong> Business Systems Analyst, IT Business Analyst, Product/Operations Analyst, Junior Cybersecurity Analyst.</p>
+            <p class="target-roles"><strong>Target roles:</strong> Business Systems Analyst, IT Business Analyst, Operations Analyst, Product Analyst.</p>
             <div class="cta">
               <a class="btn primary" href="#view-experience">View Experience</a>
               <a class="btn" href="#projects">View Projects</a>
@@ -87,19 +110,19 @@
           <article class="about-intro card">
             <p class="about-kicker">People-First Professional</p>
             <p class="about-lead">
-              I build trust fast, create clear content, and bring positive energy to every conversation.
+              I bring customer context, business priorities, and technical teams together so decisions move faster.
             </p>
             <p>
-              My strength is connecting business goals with technical execution. I adapt how I communicate for executives, clients, and technical teams so everyone stays aligned and decisions move forward.
+              My background in sales and customer service helps me identify what users actually need and where friction appears in real workflows.
             </p>
             <p>
-              I do my best work where collaboration, clarity, and momentum matter most.
+              I communicate clearly with both business and technical stakeholders, document requirements with structure, and keep delivery focused on measurable outcomes.
             </p>
             <div class="about-tags" aria-label="Key strengths">
-              <span>Content Creation</span>
-              <span>Client Communication</span>
-              <span>Business + IT Alignment</span>
-              <span>Positive Leadership</span>
+              <span>Requirements Clarity</span>
+              <span>Stakeholder Alignment</span>
+              <span>Customer Insight</span>
+              <span>Execution Focus</span>
             </div>
           </article>
           <div class="about-pillars">
@@ -458,6 +481,26 @@
       const siteMenu = document.getElementById("site-menu");
       const mobileQuery = window.matchMedia("(max-width: 860px)");
       const backToTopBtn = document.querySelector(".back-to-top");
+      const themeToggle = document.querySelector(".theme-toggle");
+      const themeStorageKey = "portfolio-theme";
+
+      function setTheme(theme) {
+        document.documentElement.setAttribute("data-theme", theme);
+        const isDark = theme === "dark";
+        themeToggle.setAttribute("aria-pressed", String(isDark));
+        themeToggle.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+        themeToggle.textContent = isDark ? "Light Mode" : "Dark Mode";
+      }
+
+      function initializeTheme() {
+        const currentTheme = document.documentElement.getAttribute("data-theme");
+        if (currentTheme === "light" || currentTheme === "dark") {
+          setTheme(currentTheme);
+          return;
+        }
+        const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        setTheme(preferredTheme);
+      }
 
       function closeMenu() {
         siteMenu.classList.remove("is-open");
@@ -495,6 +538,17 @@
         window.scrollTo({ top: 0, behavior: "smooth" });
       });
 
+      themeToggle.addEventListener("click", () => {
+        const nextTheme = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+        setTheme(nextTheme);
+        try {
+          localStorage.setItem(themeStorageKey, nextTheme);
+        } catch (error) {
+          // Ignore storage access issues and keep runtime theme state.
+        }
+      });
+
+      initializeTheme();
       window.addEventListener("scroll", toggleBackToTop);
       toggleBackToTop();
     </script>

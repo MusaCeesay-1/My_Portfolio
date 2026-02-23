@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap");
 
 :root {
+  color-scheme: light;
   --bg: #eef4fb;
+  --bg-top: #f8fbff;
+  --bg-orb-1: #d3e6fb;
+  --bg-orb-2: #d8efff;
   --surface: #ffffff;
   --surface-soft: #f7faff;
   --text: #172033;
@@ -15,6 +19,57 @@
   --low: #1a6835;
   --shadow: 0 14px 32px rgba(20, 35, 58, 0.12);
   --shadow-strong: 0 20px 44px rgba(20, 35, 58, 0.18);
+  --topbar-bg: rgba(255, 255, 255, 0.86);
+  --badge-border: #bfd5ea;
+  --badge-bg: #eff7ff;
+  --badge-text: #204266;
+  --btn-bg: #ffffff;
+  --btn-text: #1d2a43;
+  --top-link-hover-bg: #e8f2fd;
+  --top-link-hover-border: #d2e2f6;
+  --metric-border: #d7e5f6;
+  --metric-bg: #ffffff;
+  --ticket-border: #b8cae4;
+  --ticket-bg: #edf5ff;
+  --theme-btn-border: #bdd0e6;
+  --theme-btn-bg: #f6fbff;
+  --theme-btn-text: #1b3958;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0b1422;
+  --bg-top: #101b2f;
+  --bg-orb-1: #1f385b;
+  --bg-orb-2: #20466a;
+  --surface: #132235;
+  --surface-soft: #1a2f49;
+  --text: #e5edf9;
+  --muted: #b4c4dc;
+  --line: #2c3f5b;
+  --accent: #59a4ff;
+  --accent-strong: #9ecbff;
+  --critical: #ff9ca5;
+  --high: #f4c487;
+  --medium: #ffe58f;
+  --low: #8fe0ac;
+  --shadow: 0 14px 32px rgba(0, 0, 0, 0.4);
+  --shadow-strong: 0 20px 44px rgba(0, 0, 0, 0.5);
+  --topbar-bg: rgba(17, 33, 53, 0.9);
+  --badge-border: #44658d;
+  --badge-bg: #172d49;
+  --badge-text: #d4e7ff;
+  --btn-bg: #1a2f49;
+  --btn-text: #e5f1ff;
+  --top-link-hover-bg: #1a314f;
+  --top-link-hover-border: #486a93;
+  --metric-border: #355173;
+  --metric-bg: #1a2f49;
+  --ticket-border: #4d7098;
+  --ticket-bg: #1a2f49;
+  --theme-btn-border: #45658d;
+  --theme-btn-bg: #1a314f;
+  --theme-btn-text: #d7ebff;
 }
 
 * {
@@ -32,9 +87,9 @@ body {
   color: var(--text);
   line-height: 1.6;
   background:
-    radial-gradient(circle at 10% -10%, #d3e6fb 0%, transparent 35%),
-    radial-gradient(circle at 95% 8%, #d8efff 0%, transparent 30%),
-    linear-gradient(180deg, #f8fbff 0%, var(--bg) 100%);
+    radial-gradient(circle at 10% -10%, var(--bg-orb-1) 0%, transparent 35%),
+    radial-gradient(circle at 95% 8%, var(--bg-orb-2) 0%, transparent 30%),
+    linear-gradient(180deg, var(--bg-top) 0%, var(--bg) 100%);
 }
 
 a {
@@ -60,7 +115,7 @@ a:hover {
   padding: 12px 14px;
   border-radius: 14px;
   border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.86);
+  background: var(--topbar-bg);
   backdrop-filter: blur(8px);
   position: sticky;
   top: 10px;
@@ -68,15 +123,58 @@ a:hover {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-family: "Sora", "Segoe UI", sans-serif;
   font-weight: 700;
   color: var(--text);
+}
+
+.brand-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  box-shadow: 0 4px 10px rgba(5, 20, 40, 0.2);
+  flex-shrink: 0;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+}
+
+.brand-name {
+  font-size: 0.95rem;
+}
+
+.brand-role {
+  font-size: 0.64rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
 }
 
 .top-links {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
+}
+
+.theme-toggle {
+  border: 1px solid var(--theme-btn-border);
+  background: var(--theme-btn-bg);
+  color: var(--theme-btn-text);
+  border-radius: 11px;
+  padding: 8px 11px;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .top-links a {
@@ -87,11 +185,12 @@ a:hover {
 
 .top-links a:hover {
   text-decoration: none;
-  background: #e8f2fd;
-  border-color: #d2e2f6;
+  background: var(--top-link-hover-bg);
+  border-color: var(--top-link-hover-border);
 }
 
 .brand:focus-visible,
+.theme-toggle:focus-visible,
 .top-links a:focus-visible,
 .btn:focus-visible,
 .preset-btn:focus-visible {
@@ -120,9 +219,9 @@ a:hover {
 
 .badge {
   display: inline-flex;
-  border: 1px solid #bfd5ea;
-  background: #eff7ff;
-  color: #204266;
+  border: 1px solid var(--badge-border);
+  background: var(--badge-bg);
+  color: var(--badge-text);
   border-radius: 999px;
   padding: 6px 12px;
   font-weight: 700;
@@ -155,8 +254,8 @@ h1 {
   border-radius: 11px;
   padding: 10px 14px;
   border: 1px solid var(--line);
-  background: #fff;
-  color: #1d2a43;
+  background: var(--btn-bg);
+  color: var(--btn-text);
   font-weight: 700;
 }
 
@@ -279,7 +378,7 @@ h1 {
   border: 1px solid var(--line);
   font: inherit;
   color: var(--text);
-  background: #fff;
+  background: var(--surface);
 }
 
 .tool-actions {
@@ -308,9 +407,9 @@ h1 {
 .metric {
   margin: 0;
   padding: 9px;
-  border: 1px solid #d7e5f6;
+  border: 1px solid var(--metric-border);
   border-radius: 10px;
-  background: #fff;
+  background: var(--metric-bg);
 }
 
 .metric strong {
@@ -358,9 +457,9 @@ h1 {
 .ticket-block {
   margin-top: 10px;
   padding: 9px 10px;
-  border: 1px dashed #b8cae4;
+  border: 1px dashed var(--ticket-border);
   border-radius: 10px;
-  background: #edf5ff;
+  background: var(--ticket-bg);
   font-family: "Sora", "Segoe UI", sans-serif;
   font-size: 0.84rem;
 }
@@ -389,6 +488,23 @@ h1 {
 
   .topbar {
     padding: 10px;
+    flex-wrap: wrap;
+  }
+
+  .top-links {
+    width: 100%;
+  }
+
+  .brand-role {
+    display: none;
+  }
+
+  .top-links a {
+    width: 100%;
+  }
+
+  .theme-toggle {
+    margin-left: auto;
   }
 
   .tool-form,
