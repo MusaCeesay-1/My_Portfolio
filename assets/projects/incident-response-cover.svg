@@ -1,32 +1,50 @@
-<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="720" rx="28" fill="#0A1A2F"/>
-  <rect x="40" y="40" width="1120" height="640" rx="22" fill="#0F2747"/>
-  <circle cx="108" cy="88" r="10" fill="#FD5F57"/>
-  <circle cx="142" cy="88" r="10" fill="#FDBC41"/>
-  <circle cx="176" cy="88" r="10" fill="#34C84A"/>
-  <rect x="80" y="130" width="440" height="38" rx="10" fill="#1B3E69"/>
-  <rect x="80" y="186" width="300" height="16" rx="8" fill="#274F81"/>
-  <rect x="80" y="215" width="510" height="16" rx="8" fill="#274F81"/>
-  <rect x="80" y="255" width="250" height="52" rx="12" fill="#0B88D8"/>
-  <rect x="350" y="255" width="250" height="52" rx="12" fill="#1E3E66"/>
-  <rect x="650" y="130" width="470" height="250" rx="16" fill="#132F52"/>
-  <rect x="676" y="162" width="220" height="20" rx="8" fill="#2B5E94"/>
-  <rect x="676" y="196" width="418" height="16" rx="8" fill="#204A78"/>
-  <rect x="676" y="224" width="390" height="16" rx="8" fill="#204A78"/>
-  <rect x="676" y="252" width="350" height="16" rx="8" fill="#204A78"/>
-  <rect x="676" y="292" width="170" height="56" rx="12" fill="#E5484D"/>
-  <rect x="860" y="292" width="170" height="56" rx="12" fill="#F59E0B"/>
-  <rect x="80" y="340" width="1040" height="290" rx="16" fill="#132F52"/>
-  <rect x="110" y="376" width="186" height="96" rx="12" fill="#1B3E69"/>
-  <rect x="320" y="376" width="186" height="96" rx="12" fill="#1B3E69"/>
-  <rect x="530" y="376" width="186" height="96" rx="12" fill="#1B3E69"/>
-  <rect x="740" y="376" width="186" height="96" rx="12" fill="#1B3E69"/>
-  <rect x="950" y="376" width="140" height="96" rx="12" fill="#254B79"/>
-  <rect x="110" y="500" width="760" height="18" rx="9" fill="#1E446F"/>
-  <rect x="110" y="532" width="910" height="18" rx="9" fill="#1E446F"/>
-  <rect x="110" y="564" width="840" height="18" rx="9" fill="#1E446F"/>
-  <rect x="962" y="500" width="128" height="82" rx="12" fill="#123259"/>
-  <text x="80" y="108" fill="#9FCBFF" font-family="Arial, sans-serif" font-size="28" font-weight="700">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="Incident response priority calculator dashboard preview">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1a2f"/>
+      <stop offset="100%" stop-color="#122845"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1a6fb8"/>
+      <stop offset="100%" stop-color="#1f8ed9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect x="70" y="80" width="1460" height="840" rx="34" fill="#0f2747" stroke="#274d77" stroke-width="4"/>
+
+  <text x="130" y="162" fill="#b9d8ff" font-family="Segoe UI, Arial, sans-serif" font-size="50" font-weight="700">
     Incident Response Priority Calculator
   </text>
+  <text x="130" y="208" fill="#7ea9d5" font-family="Segoe UI, Arial, sans-serif" font-size="25">
+    SOC triage scoring for severity, impact, and response guidance
+  </text>
+
+  <rect x="130" y="262" width="600" height="280" rx="20" fill="#122f53" stroke="#2a4f78" stroke-width="3"/>
+  <text x="170" y="312" fill="#9fc8f5" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600">Incident Inputs</text>
+  <rect x="170" y="340" width="520" height="44" rx="10" fill="#1e446f"/>
+  <rect x="170" y="402" width="520" height="44" rx="10" fill="#1e446f"/>
+  <rect x="170" y="464" width="250" height="54" rx="12" fill="url(#chip)"/>
+  <rect x="440" y="464" width="250" height="54" rx="12" fill="#1d3557"/>
+  <text x="195" y="371" fill="#bdd8f3" font-family="Segoe UI, Arial, sans-serif" font-size="20">Threat Type, Data Sensitivity, Business Impact</text>
+  <text x="195" y="433" fill="#bdd8f3" font-family="Segoe UI, Arial, sans-serif" font-size="20">Exploitability, Detection Confidence, Exposure</text>
+  <text x="220" y="499" fill="#e8f4ff" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Calculate Priority</text>
+  <text x="505" y="499" fill="#b6cde5" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Reset</text>
+
+  <rect x="770" y="262" width="680" height="280" rx="20" fill="#122f53" stroke="#2a4f78" stroke-width="3"/>
+  <text x="810" y="312" fill="#9fc8f5" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600">Priority Output</text>
+  <rect x="810" y="340" width="600" height="78" rx="12" fill="#183b64"/>
+  <text x="846" y="389" fill="#f3b437" font-family="Segoe UI, Arial, sans-serif" font-size="36" font-weight="700">Severity: High (Score 82)</text>
+  <rect x="810" y="438" width="280" height="80" rx="12" fill="#e24c4f"/>
+  <rect x="1130" y="438" width="280" height="80" rx="12" fill="#f1a230"/>
+  <text x="845" y="486" fill="#fff4f4" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Escalate in 15 min</text>
+  <text x="1160" y="486" fill="#fff7eb" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Containment Playbook</text>
+
+  <rect x="130" y="582" width="1320" height="280" rx="20" fill="#122f53" stroke="#2a4f78" stroke-width="3"/>
+  <text x="170" y="632" fill="#9fc8f5" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600">Analyst Decision Support</text>
+  <g fill="#bdd8f3" font-family="Segoe UI, Arial, sans-serif" font-size="23">
+    <text x="170" y="684">- Applies weighted scoring model for repeatable triage decisions</text>
+    <text x="170" y="730">- Maps outputs to urgency windows and escalation routes</text>
+    <text x="170" y="776">- Standardizes incident notes for SOC handoff and reporting</text>
+    <text x="170" y="822">- Reduces subjective priority calls during high-alert periods</text>
+  </g>
 </svg>

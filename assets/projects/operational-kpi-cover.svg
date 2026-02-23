@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="Operational KPI dashboard cover">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8f1fa"/>
+      <stop offset="100%" stop-color="#f6fbff"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0f4c81"/>
+      <stop offset="100%" stop-color="#1f79c3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect x="80" y="90" width="1440" height="820" rx="34" fill="#ffffff" stroke="#d4e1ef" stroke-width="4"/>
+  <text x="140" y="180" fill="#123456" font-size="54" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Operational Performance KPI Analysis</text>
+  <text x="140" y="228" fill="#4c6481" font-size="28" font-family="Segoe UI, Arial, sans-serif">Service Activation and Support Efficiency</text>
+
+  <rect x="140" y="276" width="300" height="130" rx="18" fill="#f5f9ff" stroke="#d4e1ef"/>
+  <text x="170" y="322" fill="#4c6481" font-size="23" font-family="Segoe UI, Arial, sans-serif">SLA Breach %</text>
+  <text x="170" y="375" fill="#103a63" font-size="50" font-family="Segoe UI, Arial, sans-serif" font-weight="700">18.0%</text>
+
+  <rect x="470" y="276" width="300" height="130" rx="18" fill="#f5f9ff" stroke="#d4e1ef"/>
+  <text x="500" y="322" fill="#4c6481" font-size="23" font-family="Segoe UI, Arial, sans-serif">Backlog</text>
+  <text x="500" y="375" fill="#103a63" font-size="50" font-family="Segoe UI, Arial, sans-serif" font-weight="700">14</text>
+
+  <rect x="800" y="276" width="300" height="130" rx="18" fill="#f5f9ff" stroke="#d4e1ef"/>
+  <text x="830" y="322" fill="#4c6481" font-size="23" font-family="Segoe UI, Arial, sans-serif">Avg CSAT</text>
+  <text x="830" y="375" fill="#103a63" font-size="50" font-family="Segoe UI, Arial, sans-serif" font-weight="700">4.22</text>
+
+  <rect x="1130" y="276" width="300" height="130" rx="18" fill="#f5f9ff" stroke="#d4e1ef"/>
+  <text x="1160" y="322" fill="#4c6481" font-size="23" font-family="Segoe UI, Arial, sans-serif">Resolved</text>
+  <text x="1160" y="375" fill="#103a63" font-size="50" font-family="Segoe UI, Arial, sans-serif" font-weight="700">786</text>
+
+  <rect x="140" y="452" width="640" height="360" rx="20" fill="#ffffff" stroke="#d4e1ef"/>
+  <text x="170" y="497" fill="#294765" font-size="24" font-family="Segoe UI, Arial, sans-serif" font-weight="600">Weekly Ticket Trend</text>
+  <polyline fill="none" stroke="url(#accent)" stroke-width="8" points="190,740 250,700 310,715 370,660 430,685 490,620 550,650 610,600 670,635 730,590"/>
+  <g fill="#1f79c3">
+    <circle cx="190" cy="740" r="7"/><circle cx="250" cy="700" r="7"/><circle cx="310" cy="715" r="7"/>
+    <circle cx="370" cy="660" r="7"/><circle cx="430" cy="685" r="7"/><circle cx="490" cy="620" r="7"/>
+    <circle cx="550" cy="650" r="7"/><circle cx="610" cy="600" r="7"/><circle cx="670" cy="635" r="7"/><circle cx="730" cy="590" r="7"/>
+  </g>
+
+  <rect x="820" y="452" width="610" height="360" rx="20" fill="#ffffff" stroke="#d4e1ef"/>
+  <text x="850" y="497" fill="#294765" font-size="24" font-family="Segoe UI, Arial, sans-serif" font-weight="600">Risk Heatmap</text>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#4c6481">
+    <text x="915" y="544">Low</text><text x="1035" y="544">Medium</text><text x="1175" y="544">High</text><text x="1305" y="544">Urgent</text>
+  </g>
+  <g>
+    <rect x="900" y="560" width="110" height="55" rx="8" fill="#67b46e"/><rect x="1025" y="560" width="110" height="55" rx="8" fill="#84b961"/><rect x="1150" y="560" width="110" height="55" rx="8" fill="#d08a53"/><rect x="1275" y="560" width="110" height="55" rx="8" fill="#d66a49"/>
+    <rect x="900" y="630" width="110" height="55" rx="8" fill="#73b667"/><rect x="1025" y="630" width="110" height="55" rx="8" fill="#a4be57"/><rect x="1150" y="630" width="110" height="55" rx="8" fill="#d37b4e"/><rect x="1275" y="630" width="110" height="55" rx="8" fill="#d94f43"/>
+    <rect x="900" y="700" width="110" height="55" rx="8" fill="#8abc5d"/><rect x="1025" y="700" width="110" height="55" rx="8" fill="#b7c153"/><rect x="1150" y="700" width="110" height="55" rx="8" fill="#c99656"/><rect x="1275" y="700" width="110" height="55" rx="8" fill="#cf5846"/>
+  </g>
+</svg>
