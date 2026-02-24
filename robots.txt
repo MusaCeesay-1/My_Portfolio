@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://musaceesay-1.github.io/My_Portfolio/sitemap.xml
