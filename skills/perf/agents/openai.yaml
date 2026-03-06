@@ -1,0 +1,5 @@
+interface:
+  display_name: "Perf"
+  short_description: "Improve load speed and web vitals"
+  default_prompt: "Use $perf to improve this page's loading performance and reduce regressions."
+

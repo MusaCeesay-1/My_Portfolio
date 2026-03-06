@@ -1,0 +1,5 @@
+interface:
+  display_name: "SEO"
+  short_description: "Optimize metadata, sitemap, and indexing"
+  default_prompt: "Use $seo to optimize this page's metadata, social tags, sitemap, and indexing settings."
+

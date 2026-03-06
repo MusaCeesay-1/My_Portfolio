@@ -1,0 +1,5 @@
+interface:
+  display_name: "QA"
+  short_description: "Review for bugs, regressions, and a11y"
+  default_prompt: "Use $qa to review these changes and list bugs, risks, edge cases, and accessibility issues."
+

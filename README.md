@@ -24,7 +24,8 @@ This site presents:
 .
 |-- index.html
 |-- style.css
-|-- Musa_Ceesay.pdf
+|-- Resume/
+|   `-- Musa_The_Junior_Analyst.pdf
 |-- Professional Headshot.png
 |-- assets/
 |   |-- certifications/

@@ -1,0 +1,5 @@
+interface:
+  display_name: "Build"
+  short_description: "Implement frontend changes safely"
+  default_prompt: "Use $build to implement this UI/content change in the portfolio and keep the style consistent."
+

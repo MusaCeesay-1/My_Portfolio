@@ -1,0 +1,5 @@
+interface:
+  display_name: "PM"
+  short_description: "Turn ideas into clear engineering tickets"
+  default_prompt: "Use $pm to convert this idea into a concise PRD with acceptance criteria, tasks, risks, and edge cases."
+

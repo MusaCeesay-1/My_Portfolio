@@ -1,0 +1,5 @@
+interface:
+  display_name: "Roadmap"
+  short_description: "Prioritize what to build next"
+  default_prompt: "Use $roadmap to prioritize the next portfolio projects and content updates for my target roles."
+

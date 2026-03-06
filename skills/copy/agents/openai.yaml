@@ -1,0 +1,5 @@
+interface:
+  display_name: "Copy"
+  short_description: "Rewrite content for clarity and impact"
+  default_prompt: "Use $copy to rewrite this portfolio section for stronger clarity, structure, and professional tone."
+

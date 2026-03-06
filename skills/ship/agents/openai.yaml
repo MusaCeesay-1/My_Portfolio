@@ -1,0 +1,5 @@
+interface:
+  display_name: "Ship"
+  short_description: "Run final release-readiness checks"
+  default_prompt: "Use $ship to run a final pre-publish review and provide a go/no-go release checklist."
+
