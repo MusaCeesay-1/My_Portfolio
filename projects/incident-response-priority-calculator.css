@@ -181,12 +181,32 @@ a:hover {
   padding: 8px 11px;
   border-radius: 10px;
   border: 1px solid transparent;
+  position: relative;
 }
 
 .top-links a:hover {
   text-decoration: none;
   background: var(--top-link-hover-bg);
   border-color: var(--top-link-hover-border);
+}
+
+.top-links a[aria-current] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.top-links a[aria-current]::after {
+  content: "";
+  position: absolute;
+  left: 11px;
+  right: 11px;
+  bottom: 3px;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
+  opacity: 0.75;
 }
 
 .brand:focus-visible,

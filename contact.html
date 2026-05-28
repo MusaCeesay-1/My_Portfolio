@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Musa Ceesay</title>
+    <meta
+      name="description"
+      content="Contact Musa Ceesay for technical support, IT support, business systems, operations analyst, and systems analysis opportunities."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <link rel="canonical" href="https://musaceesay-1.github.io/My_Portfolio/contact.html" />
+    <link rel="icon" href="assets/og-image.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#183f35" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (() => {
+        try {
+          const storedTheme = localStorage.getItem("portfolio-theme");
+          if (storedTheme === "light" || storedTheme === "dark") {
+            document.documentElement.setAttribute("data-theme", storedTheme);
+            return;
+          }
+          if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            document.documentElement.setAttribute("data-theme", "dark");
+          }
+        } catch (error) {
+          // Ignore storage access issues and fall back to default theme.
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-page="contact">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="container">
+      <nav class="nav">
+        <a class="logo" href="index.html" aria-label="Go to home">
+          <img class="logo-avatar" src="Professional%20Headshot.png" alt="Musa Ceesay profile photo" />
+          <span class="logo-text">
+            <span class="logo-name">Musa Ceesay</span>
+            <span class="logo-role">Technical Support &amp; Systems</span>
+          </span>
+        </a>
+        <div class="links" id="site-menu" aria-hidden="true">
+          <a href="index.html" data-page="home">Home</a>
+          <a href="experience.html" data-page="experience">Experience</a>
+          <a href="projects.html" data-page="projects">Projects</a>
+          <a href="skills.html" data-page="skills">Skills</a>
+          <a href="credentials.html" data-page="credentials">Credentials</a>
+          <a href="contact.html" data-page="contact" aria-current="page">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+            Dark Mode
+          </button>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-menu"
+            aria-label="Toggle navigation menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main" class="container">
+      <section class="page-hero">
+        <p class="badge">Contact</p>
+        <h1>Let’s Start the Conversation</h1>
+        <p class="subtitle">
+          Open to IT support analyst, technical support analyst, business systems analyst, and operations analyst opportunities.
+        </p>
+      </section>
+
+      <section class="contact-showcase" aria-label="Contact options">
+        <article class="contact-callout">
+          <p class="badge">Open to opportunities</p>
+          <h2>Support, systems, and analyst work are where I do my best problem-solving.</h2>
+          <p>
+            Reach out for roles, project walkthroughs, portfolio feedback, or conversations around technical support and business systems work.
+          </p>
+          <div class="contact-points" aria-label="Availability highlights">
+            <span>Raleigh / Morrisville, NC</span>
+            <span>Technical Support</span>
+            <span>Business Systems</span>
+          </div>
+        </article>
+
+        <div class="contact-grid contact-grid-featured">
+          <a class="contact-item contact-card-primary" href="mailto:musaceesayofficial@gmail.com">
+            <img class="contact-logo" src="assets/icons/email.svg" alt="" aria-hidden="true" />
+            <span>
+              <strong>Email Me</strong>
+              <small>musaceesayofficial@gmail.com</small>
+            </span>
+          </a>
+          <a class="contact-item" href="https://www.linkedin.com/in/musa-ceesay-65a6b0238" target="_blank" rel="noopener noreferrer">
+            <img class="contact-logo" src="assets/icons/linkedin.svg" alt="" aria-hidden="true" />
+            <span>
+              <strong>LinkedIn</strong>
+              <small>Connect professionally</small>
+            </span>
+          </a>
+          <a class="contact-item" href="https://github.com/MusaCeesay-1" target="_blank" rel="noopener noreferrer">
+            <img class="contact-logo" src="assets/icons/github.svg" alt="" aria-hidden="true" />
+            <span>
+              <strong>GitHub</strong>
+              <small>Review my technical work</small>
+            </span>
+          </a>
+          <a class="contact-item" href="Resume/Musa_The_Junior_Analyst.pdf" target="_blank" rel="noopener noreferrer">
+            <img class="contact-logo" src="assets/icons/resume.svg" alt="" aria-hidden="true" />
+            <span>
+              <strong>Resume PDF</strong>
+              <small>Open current resume</small>
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>&copy; <span id="year"></span> Musa Ceesay. All rights reserved.</p>
+      </footer>
+    </main>
+
+    <button class="back-to-top" type="button" aria-label="Back to top">Top</button>
+    <script src="site.js"></script>
+  </body>
+</html>

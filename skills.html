@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills | Musa Ceesay</title>
+    <meta
+      name="description"
+      content="Skills for Musa Ceesay across systems analysis, technical support, SQL, Splunk, Agile delivery, incident triage, and stakeholder communication."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <link rel="canonical" href="https://musaceesay-1.github.io/My_Portfolio/skills.html" />
+    <link rel="icon" href="assets/og-image.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#183f35" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (() => {
+        try {
+          const storedTheme = localStorage.getItem("portfolio-theme");
+          if (storedTheme === "light" || storedTheme === "dark") {
+            document.documentElement.setAttribute("data-theme", storedTheme);
+            return;
+          }
+          if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            document.documentElement.setAttribute("data-theme", "dark");
+          }
+        } catch (error) {
+          // Ignore storage access issues and fall back to default theme.
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-page="skills">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="container">
+      <nav class="nav">
+        <a class="logo" href="index.html" aria-label="Go to home">
+          <img class="logo-avatar" src="Professional%20Headshot.png" alt="Musa Ceesay profile photo" />
+          <span class="logo-text">
+            <span class="logo-name">Musa Ceesay</span>
+            <span class="logo-role">Technical Support &amp; Systems</span>
+          </span>
+        </a>
+        <div class="links" id="site-menu" aria-hidden="true">
+          <a href="index.html" data-page="home">Home</a>
+          <a href="experience.html" data-page="experience">Experience</a>
+          <a href="projects.html" data-page="projects">Projects</a>
+          <a href="skills.html" data-page="skills" aria-current="page">Skills</a>
+          <a href="credentials.html" data-page="credentials">Credentials</a>
+          <a href="contact.html" data-page="contact">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+            Dark Mode
+          </button>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-menu"
+            aria-label="Toggle navigation menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main" class="container">
+      <section class="page-hero">
+        <p class="badge">Skills</p>
+        <h1>Technical, Analytical &amp; Delivery Skills</h1>
+        <p class="subtitle">
+          A practical mix of support troubleshooting, systems thinking, data literacy, Agile delivery, security awareness, and stakeholder communication.
+        </p>
+      </section>
+
+      <section class="section">
+        <div class="grid">
+          <article class="card">
+            <h3>Systems Analysis &amp; Design</h3>
+            <ul class="highlights">
+              <li>Requirements Engineering</li>
+              <li>Process Modeling (AS-IS / TO-BE)</li>
+              <li>System Context Diagrams</li>
+              <li>Data Modeling</li>
+              <li>User Stories &amp; Acceptance Criteria</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Data &amp; Technical Literacy</h3>
+            <ul class="highlights">
+              <li>SQL</li>
+              <li>API Analysis</li>
+              <li>Data Validation</li>
+              <li>Splunk SPL</li>
+              <li>Dashboarding</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Agile &amp; Delivery</h3>
+            <ul class="highlights">
+              <li>Jira</li>
+              <li>Scrum Ceremonies</li>
+              <li>Backlog Management</li>
+              <li>Sprint Planning</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Security &amp; Risk Awareness</h3>
+            <ul class="highlights">
+              <li>SIEM Fundamentals</li>
+              <li>Incident Triage</li>
+              <li>Risk Identification</li>
+              <li>Security Reporting</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Technical Support</h3>
+            <ul class="highlights">
+              <li>Connectivity Troubleshooting</li>
+              <li>POS and Terminal Setup</li>
+              <li>Customer Configuration Support</li>
+              <li>Root-Cause Diagnosis</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Communication &amp; Stakeholder Work</h3>
+            <ul class="highlights">
+              <li>Stakeholder Communication</li>
+              <li>Technical Documentation</li>
+              <li>Client Solutions</li>
+              <li>Cross-Team Coordination</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>&copy; <span id="year"></span> Musa Ceesay. All rights reserved.</p>
+      </footer>
+    </main>
+
+    <button class="back-to-top" type="button" aria-label="Back to top">Top</button>
+    <script src="site.js"></script>
+  </body>
+</html>

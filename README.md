@@ -1,16 +1,16 @@
 ﻿# Musa Ceesay Portfolio Website
 
-Personal portfolio website for Musa Ceesay, showcasing experience, projects, education, certifications, skills, and contact information.
+Personal portfolio website for Musa Ceesay, showcasing technical support, business systems, projects, credentials, skills, and contact information.
 
 ## Live Purpose
 
 This site presents:
-- Professional summary and work experience
-- Featured cybersecurity project work
-- Education background
-- Professional certifications
-- Technical and business skills
-- Contact links (email, LinkedIn, GitHub, resume)
+- Professional summary and proof points
+- Technical support and business systems experience
+- Systems analysis, cybersecurity, and KPI projects
+- Education and certifications
+- Technical, analyst, and communication skills
+- Contact links with resume, LinkedIn, GitHub, and email
 
 ## Tech Stack
 
@@ -23,18 +23,28 @@ This site presents:
 ```text
 .
 |-- index.html
+|-- experience.html
+|-- projects.html
+|-- skills.html
+|-- credentials.html
+|-- contact.html
 |-- style.css
+|-- site.js
+|-- Professional Headshot.png
 |-- Resume/
 |   `-- Musa_The_Junior_Analyst.pdf
-|-- Professional Headshot.png
 |-- assets/
 |   |-- certifications/
 |   |-- education/
+|   |-- icons/
 |   |-- projects/
 |   `-- og-image.svg
-|-- images/
-`-- skills/
-    `-- ui-agent/
+|-- project-1-systems-analysis/
+`-- projects/
+    |-- *.html
+    |-- *.css
+    |-- *.sql
+    `-- project-nav.js
 ```
 
 ## Run Locally

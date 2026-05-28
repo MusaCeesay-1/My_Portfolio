@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Musa Ceesay</title>
+    <meta
+      name="description"
+      content="Projects by Musa Ceesay across systems analysis, workflow design, cybersecurity triage, SQL, KPI dashboards, and operational reporting."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <link rel="canonical" href="https://musaceesay-1.github.io/My_Portfolio/projects.html" />
+    <link rel="icon" href="assets/og-image.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#183f35" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (() => {
+        try {
+          const storedTheme = localStorage.getItem("portfolio-theme");
+          if (storedTheme === "light" || storedTheme === "dark") {
+            document.documentElement.setAttribute("data-theme", storedTheme);
+            return;
+          }
+          if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            document.documentElement.setAttribute("data-theme", "dark");
+          }
+        } catch (error) {
+          // Ignore storage access issues and fall back to default theme.
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-page="projects">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="container">
+      <nav class="nav">
+        <a class="logo" href="index.html" aria-label="Go to home">
+          <img class="logo-avatar" src="Professional%20Headshot.png" alt="Musa Ceesay profile photo" />
+          <span class="logo-text">
+            <span class="logo-name">Musa Ceesay</span>
+            <span class="logo-role">Technical Support &amp; Systems</span>
+          </span>
+        </a>
+        <div class="links" id="site-menu" aria-hidden="true">
+          <a href="index.html" data-page="home">Home</a>
+          <a href="experience.html" data-page="experience">Experience</a>
+          <a href="projects.html" data-page="projects" aria-current="page">Projects</a>
+          <a href="skills.html" data-page="skills">Skills</a>
+          <a href="credentials.html" data-page="credentials">Credentials</a>
+          <a href="contact.html" data-page="contact">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+            Dark Mode
+          </button>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-menu"
+            aria-label="Toggle navigation menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main" class="container">
+      <section class="page-hero">
+        <p class="badge">Projects</p>
+        <h1>Systems, Data &amp; Support Projects</h1>
+        <p class="subtitle">
+          Case studies and tools that show how I document requirements, redesign workflows, analyze operational performance, and build practical support logic.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Featured Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <img class="project-image" src="assets/projects/featured-network-lab.svg" alt="Visual flow of customer service ordering and provisioning lifecycle" loading="lazy" decoding="async" />
+            <div class="project-tags" aria-label="Project categories">
+              <span>Systems Analysis</span>
+              <span>Telecom Operations</span>
+            </div>
+            <h3>Digital Customer Service Ordering &amp; Provisioning System</h3>
+            <p>A systems analysis case redesigning telecom service ordering to reduce activation delays and eliminate duplicate data entry.</p>
+            <p>Demonstrates requirements engineering, process modeling, and integration design capability.</p>
+            <p><strong>Focus:</strong> Telecom Operations, Systems Integration, Process Optimization</p>
+            <p class="project-links">
+              <a href="projects/customer-service-ordering-provisioning-system.html">View Case Study</a>
+              <a href="projects/customer-service-ordering-provisioning-system.html#process">AS-IS / TO-BE Diagrams</a>
+              <a href="assets/projects/diagrams/system-context.drawio" target="_blank" rel="noopener noreferrer">Draw.io Source File</a>
+              <a href="projects/customer-service-ordering-provisioning-brief.pdf" download>1-Page PDF Brief</a>
+            </p>
+            <p class="meta">Target impact (modeled): reduce activation cycle time by 20-30% and remove duplicate data entry across 3 teams.</p>
+            <p class="meta">Status: Completed (Analyst Portfolio Case)</p>
+          </article>
+          <article class="card">
+            <img class="project-image" src="assets/projects/diagrams/system-context-export.svg" alt="Healthcare scheduling and intake optimization system context visual" loading="lazy" decoding="async" />
+            <div class="project-tags" aria-label="Project categories">
+              <span>Workflow Design</span>
+              <span>Healthcare Ops</span>
+            </div>
+            <h3>Healthcare Appointment Scheduling &amp; Intake Optimization</h3>
+            <p>A systems analysis case redesigning healthcare appointment and intake workflows to reduce no-shows and shorten check-in delays.</p>
+            <p>Demonstrates repeatable analyst capability in requirements engineering, workflow modeling, and operational redesign.</p>
+            <p><strong>Focus:</strong> Healthcare Operations, Process Modeling, KPI-Driven Optimization</p>
+            <p class="project-links">
+              <a href="projects/healthcare-appointment-scheduling-intake-optimization.html">View Case Study</a>
+              <a href="projects/healthcare-appointment-scheduling-intake-optimization.html#process">AS-IS / TO-BE</a>
+              <a href="projects/healthcare-appointment-scheduling-intake-optimization.html#requirements">Requirements</a>
+            </p>
+            <p class="meta">Target impact (modeled): lower no-show rate by 15-20% and cut average check-in time by 25%.</p>
+            <p class="meta">Status: Completed (Analyst Portfolio Case)</p>
+          </article>
+          <article class="card">
+            <img class="project-image" src="assets/projects/incident-response-cover.svg" alt="Visual dashboard preview for the Incident Response Priority Calculator project" loading="lazy" decoding="async" />
+            <div class="project-tags" aria-label="Project categories">
+              <span>Cybersecurity</span>
+              <span>JavaScript Tool</span>
+            </div>
+            <h3>Incident Response Priority Calculator</h3>
+            <p>A practical SOC-style triage tool that calculates incident severity and recommends response actions based on threat type, business impact, and data sensitivity.</p>
+            <p><strong>Stack:</strong> HTML, CSS, JavaScript</p>
+            <p class="project-links">
+              <a href="projects/incident-response-priority-calculator.html">View Project Page</a>
+              <a href="projects/incident-response-priority-calculator.html#demo">Live Demo</a>
+              <a href="https://github.com/MusaCeesay-1/incident-response-priority-calculator" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            </p>
+            <p class="meta">Status: Completed</p>
+          </article>
+          <article class="card">
+            <img class="project-image" src="assets/projects/operational-kpi-cover.svg" alt="Preview of operational KPI dashboard analysis and insight memo scenario" loading="lazy" decoding="async" />
+            <div class="project-tags" aria-label="Project categories">
+              <span>SQL / KPI Analytics</span>
+              <span>Ops Reporting</span>
+            </div>
+            <h3>Operational Performance KPI Analysis</h3>
+            <p>Service Activation and Support Efficiency scenario focused on KPI visibility, operational risk detection, and leadership decision support.</p>
+            <p>Includes a Postgres synthetic dataset script, an analyst SQL pack, dashboard layout blueprint, and executive memo.</p>
+            <p><strong>Focus:</strong> Operational Analytics, KPI Governance, Service Performance</p>
+            <p class="project-links">
+              <a href="projects/operational-kpi-dashboard-insight-memo.html">View Scenario</a>
+              <a href="projects/operational-kpi-dashboard-insight-memo.html#dashboard">KPI Dashboard</a>
+              <a href="projects/operational-kpi-dashboard-insight-memo.html#memo">Insight Memo</a>
+            </p>
+            <p class="meta">Target impact (modeled): increase SLA adherence by 10-15% and reduce unresolved backlog volume by 20%.</p>
+            <p class="meta">Status: Completed (Analyst Portfolio Scenario)</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Analyst Artifacts</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Requirements &amp; User Stories</h3>
+            <p>Structured business needs into functional requirements, acceptance criteria, stakeholder maps, and clear delivery scope.</p>
+            <p class="meta">Evidence: telecom and healthcare systems analysis case studies</p>
+          </article>
+          <article class="card">
+            <h3>Workflow &amp; Process Models</h3>
+            <p>Created AS-IS and TO-BE process flows, system context diagrams, and operational redesigns that expose handoff risk.</p>
+            <p class="meta">Tools: Draw.io, Lucidchart-style modeling, process analysis</p>
+          </article>
+          <article class="card">
+            <h3>SQL, KPIs &amp; Dashboards</h3>
+            <p>Designed KPI definitions, SQL analysis packs, dashboard layouts, and leadership-ready insight memos.</p>
+            <p class="meta">Evidence: operational KPI dashboard and insight memo scenario</p>
+          </article>
+          <article class="card">
+            <h3>Support &amp; Triage Logic</h3>
+            <p>Built repeatable decision models for incident priority, technical troubleshooting, and customer support escalation.</p>
+            <p class="meta">Evidence: incident response calculator and technical support roles</p>
+          </article>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>&copy; <span id="year"></span> Musa Ceesay. All rights reserved.</p>
+      </footer>
+    </main>
+
+    <button class="back-to-top" type="button" aria-label="Back to top">Top</button>
+    <script src="site.js"></script>
+  </body>
+</html>
